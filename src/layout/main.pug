@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+html(lang="zh")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="./style/common.css")
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    block header
+  body
+    .sidebar
+      .background
+        img(class="person", id="person-img", src="#")
+      .content
+        .logo
+          img(src="./image/logo.png")
+        .nav
+          a(href="index.html", class=(nav == 'index') ?'active': '') 首页
+          a(href="intro.html", class=(nav == 'intro') ?'active': '') 活动内容
+          a(href="ticket.html", class=(nav == 'ticket') ?'active': '') 售票信息
+          a(href="notice.html", class=(nav == 'notice') ?'active': '') 参展须知
+          a(href="apply-booth.html", class=(nav == 'apply-booth') ?'active': '') 摊位招募
+          a(href="apply-custom.html", class=(nav == 'apply-custom') ?'active': '') 特殊参展申请
+          a(href="apply-staff.html", class=(nav == 'apply-staff') ?'active': '') Staff 招募
+          a(href="about.html", class=(nav == 'about') ?'active': '') 关于展会
+    .main
+      block main
+
+    script.
+      function randomNumber(min, max) {
+        return Math.round(Math.random() * (max - min)) + min;
+      }
+      var images = ['suika.png', 'cirno.png', 'chen.png'];
+      var c = randomNumber(0, images.length -1);
+      document.querySelector("#person-img").setAttribute("src", './image/p/'+images[c]);
+      
+    
+          
