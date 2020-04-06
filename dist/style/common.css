@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Microsoft YaHei";
+  -webkit-font-smoothing: antialiased;
+  color: #333;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-size: 15px;
+}
+* {
+  transition-timing-function: ease-in-out;
+}
+.clear:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+.container {
+  width: 730px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.columns {
+  box-sizing: border-box;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.column {
+  box-sizing: border-box;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 33.333%;
+}
+@keyframes personEntry {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.sidebar {
+  background-color: #faf2ee;
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+.sidebar .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.sidebar .background .person {
+  position: absolute;
+  bottom: -2vw;
+  left: -2vw;
+  width: 90%;
+  opacity: 0;
+  animation: personEntry 0.8s ease-in-out forwards;
+}
+.sidebar .content {
+  position: relative;
+  z-index: 3;
+  text-align: right;
+  padding-top: 25%;
+}
+.sidebar .content .logo {
+  padding: 0 40px;
+}
+.sidebar .content .logo img {
+  height: 120px;
+}
+.sidebar .content .nav {
+  padding-top: 10%;
+}
+.sidebar .content .nav a {
+  display: block;
+  text-decoration: none;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  color: #333;
+}
+.sidebar .content .nav a.active {
+  color: #bf2d26;
+  font-weight: bolder;
+}
+.sidebar .content .nav a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.main {
+  margin-left: 30%;
+  position: relative;
+  z-index: 1;
+}
+.main .page-title {
+  position: absolute;
+  right: -12px;
+  top: -7vw;
+  z-index: -1;
+  font-size: 3.6vw;
+  font-weight: bold;
+  color: #faf2ee;
+  line-height: 1;
+  user-select: none;
+  transform: rotate(-90deg);
+  transform-origin: right bottom;
+}
+.page-content {
+  padding: 60px 0;
+}
+.page-content .article {
+  line-height: 2;
+}
+.page-content .article h2 {
+  padding-bottom: 30px;
+}
+.page-content .article p {
+  margin: 0.75em 0;
+}
+.page-content .article .line {
+  margin: 0.75em 0;
+  padding: 0.75em 0;
+}
+.button {
+  background: #7588ba;
+  color: #fff;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.button:hover {
+  background-color: #445b91;
+}
+.page-index .intro {
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  line-height: 2;
+}
+.placeholder {
+  background-color: #eee;
+  height: 600px;
+  line-height: 600px;
+  color: #ddd;
+}
+.page-intro .enter {
+  padding: 60px;
+  background-color: #eee;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  transition: 0.3s all;
+}
+.page-intro .enter .mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  opacity: 0.7;
+  transition: 0.3s all;
+}
+.page-intro .enter .content {
+  position: relative;
+  z-index: 5;
+}
+.page-intro .enter .content h2 {
+  padding-bottom: 40px;
+}
+.page-intro .enter:hover {
+  padding: 100px 0;
+  color: #fff;
+}
+.page-intro .enter:hover .mask {
+  background-color: #000 !important;
+  opacity: 0.4;
+}
+.coming-soon {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100vh;
+  text-align: center;
+  font-size: 30px;
+  color: #888;
+}
+.coming-soon .icon {
+  opacity: 0.7;
+  height: 200px;
+  padding-bottom: 30px;
+}
+.coming-soon p {
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+}
+.staff-list span {
+  width: 100px;
+  float: left;
+  text-align: right;
+  margin-right: 20px;
+}
