@@ -165,7 +165,7 @@ html {
   left: 0;
   width: 100%;
   height: 800px;
-  background: url(/image/intro-post.jpg);
+  background: url(../image/intro-post.jpg);
   background-size: cover;
 }
 .page-index .intro .intro-post::after {
