@@ -301,14 +301,13 @@ html {
 }
 .event-preview .event-title {
   line-height: 46px;
-  font-size: 32px;
+  font-size: 30px;
   vertical-align: middle;
 }
-.event-preview .event-title .cross {
-  height: 30px;
-  width: 30px;
-  margin: 10px 0;
+.event-preview .event-title .icon-cross {
+  font-size: 30px;
   display: block;
+  color: #777;
 }
 .event-preview .event-subtitle {
   font-size: 18px;
