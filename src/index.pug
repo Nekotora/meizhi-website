@@ -9,13 +9,14 @@ block main
     .page-title
       h1 关于活动
     .ch.meta.intro
-      .placeholder
-        h1 这里大概有一张巨大的海报报报报报
-      .container
-        p 同人世界，一日幻想！
-        p 以全国级TouhouOnly为目标筹办的东方展会。
-        p 2020<sub>年</sub>8<sub>月</sub>15-16<sub>日</sub>
-        p 中国上海
+      .intro-post
+      .container.desc
+        h1.event-title 魅知幻想博览会
+        p 国内首个以全国量级THO为目标筹办的东方展会——第一届魅知幻想博览会
+        p 这也许会是一个属于中国东方爱好者的例大祭，
+        p 也许是国内东方同人文化的绝佳舞台，
+        p 也许是国内东方爱好者的一次节日盛典。
+        p 它也许和国内东方Project的未来一样，有着无限的可能性。
     .ch.event-preview.event-shanghai
       .container
         .main-content
@@ -23,14 +24,13 @@ block main
             h1.position 上海
             .event-title 魅知幻想博览会<img class="cross" src="./image/cross.svg">上海ComicUp 26
             .event-subtitle 2020.7.25 - 26 · 国家会展中心（上海）
-          .line  <span class="tag">合作展会</span>	上海Comicup 26【https://www.allcpp.cn/allcpp/event/event.do?event=865
-          .line  <span class="tag">同期活动</span>	魅知幻想歌谣会5G版2020（上海场）
+          .sub-event 魅知幻想歌谣会5G版2020（上海场）
           .links 
-            a.item(href="#")
-              <img src="./image/link.svg">
+            a.item(href="https://www.allcpp.cn/allcpp/event/event.do?event=865", target="_blank")
+              i.icon.icon-link
               span 活动网站
-            a.item(href="#")
-              <img src="./image/map.svg">
+            a.item(href="https://j.map.baidu.com/b3/PC", target="_blank")
+              i.icon.icon-position
               span 地图导航
         .map#map-shanghai
     .ch.event-preview.event-guangzhou
@@ -38,10 +38,16 @@ block main
         .main-content
           .event-title-box
             h1.position 广州
-            .event-title 魅知幻想博览会<img class="cross" src="./image/cross.svg">广州萤火虫动漫游戏嘉年华24
+            .event-title 魅知幻想博览会<img class="cross" src="./image/cross.svg">广州萤火虫<br>动漫游戏嘉年华24
             .event-subtitle 2020.8.21 - 23 · 广州琶洲保利世博展览馆
-          .line  <span class="tag">合作展会</span>	上海Comicup 26【https://www.allcpp.cn/allcpp/event/event.do?event=865
-          .line  <span class="tag">同期活动</span>	魅知幻想歌谣会5G版2020（上海场）
+          .sub-event 魅知幻想歌谣会5G版2020（广州场）
+          .links 
+            a.item(href="http://www.fireflyacg.com/", target="_blank")
+              i.icon.icon-link
+              span 活动网站
+            a.item(href="https://j.map.baidu.com/f3/Z", target="_blank")
+              i.icon.icon-position
+              span 地图导航
         .map#map-guangzhou
     .ch.event-preview.event-beijing
       .container
@@ -50,10 +56,14 @@ block main
             h1.position 北京
             .event-title 魅知幻想博览会<img class="cross" src="./image/cross.svg">北京IDO JOY 2020
             .event-subtitle 2020.10.2 - 4 · 国家会议中心
-          .line  <span class="tag">日期</span>	2020年7月25-26日
-          .line  <span class="tag">会场</span>	国家会展中心（上海）【点开是地图】
-          .line  <span class="tag">合作展会</span>	上海Comicup 26【https://www.allcpp.cn/allcpp/event/event.do?event=865
-          .line  <span class="tag">同期活动</span>	魅知幻想歌谣会5G版2020（上海场）
+          .sub-event 魅知幻想歌谣会5G版2020（北京场）<br>幻奏华章 2020天津场
+          .links 
+            a.item(href="http://www.idoacg.com/", target="_blank")
+              i.icon.icon-link
+              span 活动网站
+            a.item(href="https://j.map.baidu.com/f2/cq", target="_blank")
+              i.icon.icon-position
+              span 地图导航
         .map#map-beijing
 
     script(type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57")
