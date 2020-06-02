@@ -51,6 +51,33 @@ html {
     transform: translateX(0px);
   }
 }
+.mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  backdrop-filter: blur(20px);
+}
+.mobile-header .logo img {
+  height: 40px;
+  padding: 10px 0;
+}
+.mobile-header .right {
+  color: initial;
+  text-decoration: none;
+  position: absolute;
+  right: 5%;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+}
+.mobile-header .right i {
+  font-size: 20px;
+}
 .sidebar {
   background-color: #faf2ee;
   width: 30%;
@@ -387,4 +414,57 @@ html {
 }
 .anchorBL {
   opacity: 0.1;
+}
+@media screen and (max-width: 800px) {
+  .main {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 5%;
+  }
+  .sidebar {
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.3s all;
+  }
+  .sidebar .logo {
+    display: none;
+  }
+  .sidebar.active {
+    max-height: 999px;
+  }
+  .page-index .intro {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+  }
+  .page-index .intro .intro-post {
+    height: 300px;
+  }
+  .page-index .intro .desc {
+    padding-top: 200px;
+  }
+  .page-index .intro .desc .event-title {
+    font-size: 38px;
+  }
+  .page-index .event-preview .container {
+    display: block;
+    height: auto;
+  }
+  .page-index .event-preview .main-content {
+    width: 100%;
+  }
+  .page-index .event-preview .map {
+    width: 100%;
+    margin-top: 30px;
+    height: 200px;
+  }
+  .page-intro .enter {
+    padding: 40px 5%;
+  }
+  .page-intro .block-img {
+    opacity: 0.15;
+  }
 }
