@@ -99,8 +99,8 @@ html {
 .sidebar .background .person {
   position: absolute;
   bottom: -2vw;
-  left: -2vw;
-  width: 90%;
+  right: 0;
+  height: 80vh;
   opacity: 0;
   animation: personEntry 0.8s ease-in-out forwards;
 }

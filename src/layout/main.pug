@@ -30,16 +30,16 @@ html(lang="zh")
           a(href="apply-custom.html", class=(nav == 'apply-custom') ?'active': '') 特殊参展申请
           a(href="apply-staff.html", class=(nav == 'apply-staff') ?'active': '') Staff 招募
           a(href="about.html", class=(nav == 'about') ?'active': '') 关于展会
-    .main
-      block main
     script(src="./script/zepto.js")
     script.
       function randomNumber(min, max) {
         return Math.round(Math.random() * (max - min)) + min;
       }
-      var images = ['suika.png', 'cirno.png', 'chen.png'];
-      var c = randomNumber(0, images.length -1);
-      document.querySelector("#person-img").setAttribute("src", './image/p/'+images[c]);
+      function setPersonImg(url) {
+        $("#person-img").attr("src", url);
+      }
       $('.mobile-header-menu').click(function(){
         $('.sidebar').toggleClass('active')
       })
+    .main
+      block main
