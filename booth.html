@@ -40,6 +40,8 @@
       </div>
       <div class="ch booth-page">
         <div class="container" id="app">
+        <h2 :style="'display: none'">Loading...</h2>
+        <div class="booth-page-inner" :style="'opacity: 1'">
           <a class="button" href="./intro.html">返回活动介绍</a>
           <div class="booth-nav">
             <h4>快速跳转</h4>
@@ -82,6 +84,7 @@
           </div>
         </div>
       </div>
+      </div>
       <script src="./script/vue.min.js"></script>
       <script>
         var v = new Vue({
@@ -108,214 +111,890 @@
           }
         })
 
-        v.boothData = [
+        v.boothData =[
+{
+    "groupName": "摊位区-魅",
+    "groupDescription": "官方摊位区",
+    "boothsCategory": [
+    {
+        "name": "",
+        "color": "",
+        "booths": [
         {
-          groupName: 'Day1-魅',
-          groupDescription: '分区介绍',
-          boothsCategory: [
-            {
-              name: '日本社团（流星计划）',
-              textColor: '#7588ba',
-              color: '#66ccff',
-              booths: [
-                {
-                  img: "https://flag.moe/source/img/avatar.jpg",
-                  name: "社团名称ABC",
-                  description: "摊位：A123",
-                  link: "http://a.com/",
-                  tags: ['Day1', 'Day2']
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456",
-                  tags: ['Day1']
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890",
-                  tags: ['Day1', 'Day2']
-                },
-                {
-                  img: "#",
-                  name: "这个社团的名字非常长，长出天际了，我来看看会不会搞坏布局",
-                  description: "摊位：A890",
-                  tags: ['Day1', 'Day2']
-                },
-                {
-                  img: "#",
-                  name: "社团名称ABC",
-                  description: "摊位：A123"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "你好你好",
-                  description: "摊位：A890"
-                }
-              ],
-            },
-            {
-              name: '',
-              color: '',
-              booths: [
-                {
-                  img: "https://flag.moe/source/img/avatar.jpg",
-                  name: "社团名称ABC",
-                  description: "摊位：A123",
-                  link: "http://a.com/"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "这个社团的名字非常长，长出天际了，我来看看会不会搞坏布局",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "社团名称ABC",
-                  description: "摊位：A123"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "你好你好",
-                  description: "摊位：A890"
-                }
-              ],
-            },
-          ]
+            "img": "./image/circles/MEI_01.jpg",
+            "name": "魅知幻想之旅",
+            "description": "魅-1/2",
+            "tags":["Day1","Day2"],
+            "link": "http://thonly.name/"
         },
         {
-          groupName: 'Day1-梦',
-          groupDescription: '分区介绍',
-          boothsCategory: [
-            {
-              name: '秘封街',
-              textColor: '#7588ba',
-              color: '#7588ba',
-              booths: [
-                {
-                  img: "https://flag.moe/source/img/avatar.jpg",
-                  name: "社团名称ABC",
-                  description: "摊位：A123",
-                  link: "http://a.com/"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "这个社团的名字非常长，长出天际了，我来看看会不会搞坏布局",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "社团名称ABC",
-                  description: "摊位：A123"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "你好你好",
-                  description: "摊位：A890"
-                }
-              ],
-            },
-            {
-              name: '',
-              color: '',
-              booths: [
-                {
-                  img: "https://flag.moe/source/img/avatar.jpg",
-                  name: "社团名称ABC",
-                  description: "摊位：A123",
-                  link: "http://a.com/"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "这个社团的名字非常长，长出天际了，我来看看会不会搞坏布局",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "社团名称ABC",
-                  description: "摊位：A123"
-                },
-                {
-                  img: "#",
-                  name: "社团名称DEF",
-                  description: "摊位：A456"
-                },
-                {
-                  img: "#",
-                  name: "社团名称XYZ",
-                  description: "摊位：A890"
-                },
-                {
-                  img: "#",
-                  name: "你好你好",
-                  description: "摊位：A890"
-                }
-              ],
-            },
-          ]
+            "img": "./image/circles/MEI_03.jpg",
+            "name": "幻奏盛宴",
+            "tags":["Day1","Day2"],
+            "description": "魅-3/4",
+            "link": "http://toho.moe/sp"
         },
-      ]
+        {
+            "img": "./image/circles/MEI_05.jpg",
+            "name": "THB梦缘社",
+            "tags":["Day1","Day2"],
+            "description": "魅-5/6",
+            "link": "http://thwiki.cc"
+        },
+        {
+            "img": "./image/circles/MEI_07.jpg",
+            "name": "京都幻想剧团",
+            "tags":["Day1","Day2"],
+            "description": "魅-7/8",
+            "link": "http://kyotofantasytroupe.net/"
+        },
+        {
+            "img": "./image/circles/MEI_09.jpg",
+            "name": "东深见桌游部",
+            "tags":["Day1","Day2"],
+            "description": "魅-9/10",
+            "link": "https://jq.qq.com/?_wv=1027&k=icncVFFP"
+        },
+        {
+            "img": "./image/circles/MEI_11.jpg",
+            "name": "铃奈庵书屋",
+            "tags":["Day1","Day2"],
+            "description": "魅-11/12",
+            "link": ""
+        }
+        ]
+    }]
+},
+{
+    "groupName": "摊位区-梦",
+    "groupDescription": "音乐社团区",
+    "boothsCategory": [
+    {
+        "name": "",
+        "color": "",
+        "booths": [
+            {
+                "img": "./image/circles/MENG_03.jpg",
+                "name": "幻想跃迁实验室",
+                "tags":["Day1","Day2"],
+                "description": "梦-3/4",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_05.jpg",
+                "name": "境界36号",
+                "tags":["Day1","Day2"],
+                "description": "梦-5",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_06.jpg",
+                "name": "疯帽子茶会",
+                "tags":["Day1","Day2"],
+                "description": "梦-6/7",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_08.jpg",
+                "name": "幻想诗篇Xanadu Canto",
+                "tags":["Day1","Day2"],
+                "description": "梦-8",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_09.jpg",
+                "name": "Crest",
+                "tags":["Day1","Day2"],
+                "description": "梦-9",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_10.jpg",
+                "name": "bunny rhyTHm",
+                "tags":["Day1","Day2"],
+                "description": "梦-10/11",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_12.jpg",
+                "name": "Yonder Voice",
+                "tags":["Day1","Day2"],
+                "description": "梦-12～14",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_15.jpg",
+                "name": "TsuBaKi",
+                "tags":["Day1","Day2"],
+                "description": "梦-15/16",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_17.jpg",
+                "name": "DualInsomiNa",
+                "tags":["Day1","Day2"],
+                "description": "梦-17/18",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_19.jpg",
+                "name": "ジャージと愉快な仲間たち",
+                "tags":["Day1","Day2"],
+                "description": "梦-19",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_20.jpg",
+                "name": "煙霞",
+                "tags":["Day1","Day2"],
+                "description": "梦-20/21（D1）\n梦-20/22（D2）",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_22.jpg",
+                "name": "四叶工造",
+                "tags":["Day1"],
+                "description": "梦-22",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_23.jpg",
+                "name": "LiberalSpark",
+                "tags":["Day1","Day2"],
+                "description": "梦-23",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_24.jpg",
+                "name": "Static World",
+                "tags":["Day1","Day2"],
+                "description": "梦-24/25",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/MENG_26.jpg",
+                "name": "赤音羽",
+                "tags":["Day1","Day2"],
+                "description": "梦-26",
+                "link": ""
+            }
+        ]
+    }]
+},
+{
+    "groupName": "摊位区-恋",
+    "groupDescription": "音乐与桌游区",
+    "boothsCategory": [
+    {
+        "name": "旧地狱食街",
+        "textColor": "#7588ba",
+        "color": "#66ccff",
+        "booths": [{
+            "img": "./image/circles/LIAN_01.jpg",
+            "name": "Nami Haven",
+            "tags":["Day1","Day2"],
+            "description": "恋-1",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_02.jpg",
+            "name": "鴛鴦ミルクティー",
+            "tags":["Day1","Day2"],
+            "description": "恋-2",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_03.jpg",
+            "name": "PSYSIA",
+            "tags":["Day1","Day2"],
+            "description": "恋-3",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_04.jpg",
+            "name": "NFTO&秋叶室内乐团",
+            "tags":["Day1","Day2"],
+            "description": "恋-4/5",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_06.jpg",
+            "name": "槐安超特急",
+            "tags":["Day1","Day2"],
+            "description": "恋-6",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_07.jpg",
+            "name": "焦味芝麻糊",
+            "tags":["Day1","Day2"],
+            "description": "恋-7",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_08.jpg",
+            "name": "梦现彼岸结界社",
+            "tags":["Day1","Day2"],
+            "description": "恋-8",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_09.jpg",
+            "name": "Coloured Glaze ",
+            "tags":["Day1","Day2"],
+            "description": "恋-9",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_10.jpg",
+            "name": "醉梦笔笺",
+            "tags":["Day1","Day2"],
+            "description": "恋-10/11",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_12.jpg",
+            "name": "槐南茶馆",
+            "tags":["Day1","Day2"],
+            "description": "恋-12/13",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/LIAN_14.jpg",
+            "name": "Scharlachrot Kammermusik",
+            "tags":["Day1","Day2"],
+            "description": "恋-14",
+            "link": ""
+        }]
+    },
+    {
+        "name": "",
+        "color": "",
+        "booths": [
+            {
+                "img": "./image/circles/LIAN_15.jpg",
+                "name": "XP社",
+                "tags":["Day1","Day2"],
+                "description": "恋-15～17",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_18.jpg",
+                "name": "丝风 ProjectZephyr",
+                "tags":["Day1","Day2"],
+                "description": "恋-18/19",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_20.jpg",
+                "name": "Tri-eye",
+                "tags":["Day1","Day2"],
+                "description": "恋-20～22",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_23.jpg",
+                "name": "星之实验室",
+                "tags":["Day1","Day2"],
+                "description": "恋-23",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_24.jpg",
+                "name": "油库里红茶馆",
+                "tags":["Day1","Day2"],
+                "description": "恋-24",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_25.jpg",
+                "name": "东方寓梦粹",
+                "tags":["Day1","Day2"],
+                "description": "恋-25",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/LIAN_26.jpg",
+                "name": "彩音~xi-on~",
+                "tags":["Day1","Day2"],
+                "description": "恋-26/27",
+                "link": ""
+            }
+        ]
+    }]
+},
+{
+    "groupName": "摊位区-奇",
+    "groupDescription": "日本社团区",
+    "boothsCategory": [
+    {
+        "name": "",
+        "color": "",
+        "booths": [
+            {
+                "img": "./image/circles/QI_01.jpg",
+                "name": "COOL&CREATE",
+                "tags":["Day1","Day2"],
+                "description": "奇-1～3",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_04.jpg",
+                "name": "豚乙女",
+                "tags":["Day1","Day2"],
+                "description": "奇-4/5",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_06.jpg",
+                "name": "石鹸屋",
+                "tags":["Day1","Day2"],
+                "description": "奇-6/7",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_08.jpg",
+                "name": "岸田教团",
+                "tags":["Day1","Day2"],
+                "description": "奇-8/9",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_10.jpg",
+                "name": "DiGiTAL WiNG",
+                "tags":["Day1","Day2"],
+                "description": "奇-10/11",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_12.jpg",
+                "name": "あぶら畑グランテッド",
+                "tags":["Day1","Day2"],
+                "description": "奇-12",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_13.jpg",
+                "name": "北国もやし製造所",
+                "tags":["Day1","Day2"],
+                "description": "奇-13/14",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_15.jpg",
+                "name": "kiroro",
+                "tags":["Day1","Day2"],
+                "description": "奇-15/16",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_17.jpg",
+                "name": "だおだおだお",
+                "tags":["Day1","Day2"],
+                "description": "奇-17",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_18.jpg",
+                "name": " ねことうふ猫豆腐",
+                "tags":["Day1","Day2"],
+                "description": "奇-18/19",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_20.jpg",
+                "name": "SOUND HOLIC",
+                "tags":["Day1","Day2"],
+                "description": "奇-20/21",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_22.jpg",
+                "name": "Melodic Taste",
+                "tags":["Day1","Day2"],
+                "description": "奇-22",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_23.jpg",
+                "name": "Hachimitsu-Lemon",
+                "tags":["Day1","Day2"],
+                "description": "奇-23",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_24.jpg",
+                "name": "TUMENECO",
+                "tags":["Day1","Day2"],
+                "description": "奇-24",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_25.jpg",
+                "name": "R-note",
+                "tags":["Day1","Day2"],
+                "description": "奇-25/26",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/QI_27.jpg",
+                "name": "ActiveNEETs",
+                "tags":["Day1","Day2"],
+                "description": "奇-27/28",
+                "link": ""
+            }            
+        ]
+    }]
+},
+
+{
+    "groupName": "摊位区-灵",
+    "groupDescription": "",
+    "boothsCategory": [
+    {
+        "name": "",
+        "color": "",
+        "booths": [
+            {
+                "img": "./image/circles/ling_01.jpg",
+                "name": "妖怪世界",
+                "tags":["Day1","Day2"],
+                "description": "灵-1～3",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_04.jpg",
+                "name": "双心物语",
+                "tags":["Day1","Day2"],
+                "description": "灵-4/5",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_06.jpg",
+                "name": "水星弹球酒吧",
+                "tags":["Day1","Day2"],
+                "description": "灵-6",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_07.jpg",
+                "name": "小风的拼豆幻想",
+                "tags":["Day1","Day2"],
+                "description": "灵-7/8",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_09.jpg",
+                "name": "MineCraft幻想乡",
+                "tags":["Day1","Day2"],
+                "description": "灵-9/10",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_11.jpg",
+                "name": "此幻社",
+                "tags":["Day1","Day2"],
+                "description": "灵-11",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_12.jpg",
+                "name": "花昙书社",
+                "tags":["Day1","Day2"],
+                "description": "灵-12",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_13.jpg",
+                "name": "凝冰百合花纪录会",
+                "tags":["Day1","Day2"],
+                "description": "灵-13",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_14.jpg",
+                "name": "东方祈华梦制作组",
+                "tags":["Day1","Day2"],
+                "description": "灵-14",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_15.jpg",
+                "name": "re零同人社",
+                "tags":["Day1","Day2"],
+                "description": "灵-15/16",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_17.jpg",
+                "name": "二色幽紫蝶",
+                "tags":["Day1","Day2"],
+                "description": "灵-17～19",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_20.jpg",
+                "name": "永动之龛",
+                "tags":["Day1","Day2"],
+                "description": "灵-20",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_21.jpg",
+                "name": "第零研究院",
+                "tags":["Day1","Day2"],
+                "description": "灵-21/22",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_23.jpg",
+                "name": "恆萃工坊",
+                "tags":["Day1","Day2"],
+                "description": "灵-23/24",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_25_1.jpg",
+                "name": "紺青世界",
+                "tags":["Day1"],
+                "description": "灵-25",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_25_2.jpg",
+                "name": "栎融社",
+                "tags":["Day2"],
+                "description": "灵-25",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_26.jpg",
+                "name": "Alice手工坊",
+                "tags":["Day1","Day2"],
+                "description": "灵-26",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_27.jpg",
+                "name": "凝华手工坊",
+                "tags":["Day1","Day2"],
+                "description": "灵-27",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/ling_28.jpg",
+                "name": "Epic-Works",
+                "tags":["Day1","Day2"],
+                "description": "灵-28",
+                "link": ""
+            }
+        ]
+    }]
+},
+{
+    "groupName": "摊位区-时",
+    "groupDescription": "",
+    "boothsCategory": [
+        {
+            "name": "旧地狱食街",
+            "textColor": "#7588ba",
+            "color": "#66ccff",
+            "booths": [{
+                "img": "./image/circles/SHI_01.jpg",
+                "name": "星月中枢站SNC",
+                "tags":["Day1","Day2"],
+                "description": "时-1～3",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/SHI_04.jpg",
+                "name": "烟雨楼台",
+                "tags":["Day1","Day2"],
+                "description": "时-4",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/SHI_05.jpg",
+                "name": "猫与催眠术",
+                "tags":["Day1","Day2"],
+                "description": "时-5",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/SHI_06.jpg",
+                "name": "Virus-T",
+                "tags":["Day1","Day2"],
+                "description": "时-6",
+                "link": ""
+            },
+            {
+                "img": "./image/circles/SHI_07.jpg",
+                "name": "群音绘Create",
+                "tags":["Day1","Day2"],
+                "description": "时-7",
+                "link": ""
+            }]
+    },
+    {
+        "name": "",
+        "color": "",
+        "booths": [
+        {
+            "img": "./image/circles/SHI_08.jpg",
+            "name": "无锡茶会东方吃喝睡组委会",
+            "tags":["Day1","Day2"],
+            "description": "时-8",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_09.jpg",
+            "name": "东方苏酒宴",
+            "tags":["Day1","Day2"],
+            "description": "时-9",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_10.jpg",
+            "name": "长沙THO沅芷湘兰",
+            "tags":["Day1","Day2"],
+            "description": "时-10",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_11.jpg",
+            "name": "温州东方同好会",
+            "tags":["Day1","Day2"],
+            "description": "时-11",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_12.jpg",
+            "name": "贵阳THO",
+            "tags":["Day1","Day2"],
+            "description": "时-12",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_13.jpg",
+            "name": "郑州THO",
+            "tags":["Day1","Day2"],
+            "description": "时-13",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_14.jpg",
+            "name": "幻响诗篇",
+            "tags":["Day1","Day2"],
+            "description": "时-14",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_15.jpg",
+            "name": "深圳THO",
+            "tags":["Day1","Day2"],
+            "description": "时-15",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_16.jpg",
+            "name": "鹤组",
+            "tags":["Day1","Day2"],
+            "description": "时-16",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_17.jpg",
+            "name": "北京THO",
+            "tags":["Day1","Day2"],
+            "description": "时-17",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_18.jpg",
+            "name": "长安THO延康衿歌",
+            "tags":["Day1","Day2"],
+            "description": "时-18",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_19.jpg",
+            "name": "云南THO",
+            "tags":["Day1","Day2"],
+            "description": "时-19",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_20.jpg",
+            "name": "武汉THO",
+            "tags":["Day1","Day2"],
+            "description": "时-20",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_21.jpg",
+            "name": "青东会",
+            "tags":["Day1","Day2"],
+            "description": "时-21",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_22.jpg",
+            "name": "广州THO",
+            "tags":["Day1","Day2"],
+            "description": "时-22",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_23.jpg",
+            "name": "成都THO",
+            "tags":["Day1","Day2"],
+            "description": "时-23",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_24.jpg",
+            "name": "浙江THO",
+            "tags":["Day1","Day2"],
+            "description": "时-24",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_25.jpg",
+            "name": "大连THO",
+            "tags":["Day1","Day2"],
+            "description": "时-25",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_26.jpg",
+            "name": "东方LiveParty",
+            "tags":["Day1","Day2"],
+            "description": "时-26",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_27.jpg",
+            "name": "南京THO",
+            "tags":["Day1","Day2"],
+            "description": "时-27",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_28.jpg",
+            "name": "福建THO",
+            "tags":["Day1","Day2"],
+            "description": "时-28",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_29.jpg",
+            "name": "河北THO",
+            "tags":["Day1","Day2"],
+            "description": "时-29",
+            "link": ""
+        }
+        ],
+    }
+]
+},
+{
+    "groupName": "摊位区-风",
+    "groupDescription": "",
+    "boothsCategory": [
+    {
+        "name": "",
+        "color": "",
+        "booths": [{
+            "img": "./image/circles/SHI_01.jpg",
+            "name": "境界契约",
+            "tags":["Day1","Day2"],
+            "description": "风-1/2",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_03.jpg",
+            "name": "4C-Fantasy",
+            "tags":["Day1","Day2"],
+            "description": "风-3/4",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_05.jpg",
+            "name": "灿华幻梦",
+            "tags":["Day1","Day2"],
+            "description": "风-5",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_06.jpg",
+            "name": "PaperyLadyland",
+            "tags":["Day1","Day2"],
+            "description": "风-6",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_07.jpg",
+            "name": "幻梦缘起",
+            "tags":["Day1","Day2"],
+            "description": "风-7",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_08.jpg",
+            "name": "富士山失忆",
+            "tags":["Day1"],
+            "description": "风-8",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_09.jpg",
+            "name": "白楼印象",
+            "tags":["Day1","Day2"],
+            "description": "风-9/10",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_11.jpg",
+            "name": "U235",
+            "tags":["Day1","Day2"],
+            "description": "风-11/12",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_13.jpg",
+            "name": "MZ次元",
+            "tags":["Day1","Day2"],
+            "description": "风-13/14",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_15.jpg",
+            "name": "CureLancy！",
+            "tags":["Day1","Day2"],
+            "description": "风-15",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_16.jpg",
+            "name": "二维镜像",
+            "tags":["Day1","Day2"],
+            "description": "风-16～19",
+            "link": ""
+        },
+        {
+            "img": "./image/circles/SHI_20.jpg",
+            "name": "麻薯小作坊",
+            "tags":["Day1"],
+            "description": "风-20",
+            "link": ""
+        }
+        ]
+    }
+]
+}
+]
+
+
       </script>
       <script>setPersonImg('./image/b/marisa.png');</script>
     </div>
