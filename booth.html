@@ -64,7 +64,7 @@
                                 <div class="booth-list">
                                     <div class="item" v-for="booth in boothCategory.booths" :key="booth.name">
                                         <a :href="booth.link">
-                                            <img :src="booth.img">
+                                            <img v-if="booth.img" :src="booth.img">
                                             <p class="name">{{booth.name}}</p>
                                             <div class="booth-tag" v-if="booth.tags">
                                                 <span v-for="tag in booth.tags">{{tag}}</span>

@@ -648,6 +648,28 @@ a:hover{
   padding: 20px 0;
 }
 
+.stage-table .stage-title{
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.stage-table .item{
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.stage-table .item span{
+  display: inline-block;
+}
+
+
+.stage-table .item .l{
+  width: 120px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+
 
 @media screen and (max-width: 800px) {
   .mobile-header {
@@ -731,5 +753,16 @@ a:hover{
   }
   .booth-nav{
     padding: 20px 20px;
+  }
+  .stage-table .item span{
+    display: block;
+  }
+
+  .stage-table .item .l{
+    text-align: left;
+  }
+
+  .stage-table .item .r{
+    text-align: right;
   }
 }
