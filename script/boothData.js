@@ -1,109 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style/common.css" />
-    <link rel="stylesheet" href="./image/icon/iconfont.css" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <title>社团列表 - 魅知幻想博览会</title>
-</head>
-
-<body>
-    <div class="mobile-header">
-        <div class="logo"><img src="./image/logo.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
-                class="icon icon-menu"></i></a>
-    </div>
-    <div class="sidebar">
-        <div class="background">
-            <img class="person" id="person-img" src="#" />
-        </div>
-        <div class="content">
-            <div class="logo"><img src="./image/logo.png" /></div>
-            <div class="nav"><a href="index.html">首页</a><a class="active" href="intro.html">活动内容</a><a
-                    href="music.html">魅知幻想歌谣会Live</a><a href="ticket.html">售票信息</a><a href="notice.html">参展须知</a><a
-                    href="apply-booth.html">展位招募</a><a href="apply-custom.html">特殊参展申请</a><a
-                    href="apply-staff.html">Staff
-                    招募</a><a href="about.html">关于展会</a></div>
-        </div>
-    </div>
-    <script src="./script/zepto.js"></script>
-    <script src="./script/zepto.fx.js"></script>
-    <script src="./script/zepto.scroll.js"></script>
-    <script src="./script/common.js"></script>
-    <div class="main">
-        <div class="page-index">
-            <div class="page-title">
-                <h1>社团列表</h1>
-            </div>
-            <div class="ch booth-page">
-                <div class="container" id="app">
-                    <h2 :style="'display: none'">Loading...</h2>
-                    <div class="booth-page-inner" :style="'opacity: 1'">
-                        <a class="button" href="./intro.html">返回活动介绍</a>
-                        <div class="booth-nav">
-                            <h4>快速跳转</h4>
-                            <a class="button" v-for="section in sectionList" @click="gotoSection(section)"
-                                href="javascript:;">{{section}}</a>
-                        </div>
-                        <div class="booth-info" class="item" v-for="boothSection in boothData"
-                            :key="boothSection.groupName"
-                            :data-section="boothSection.groupName ? boothSection.groupName : ''">
-                            <div class="booth-section-box" v-pin>
-                                <h2>{{boothSection.groupName}}</h2>
-                                <p>{{boothSection.groupDescription}}</p>
-                            </div>
-                            <div class="booth-category" v-for="boothCategory in boothSection.boothsCategory"
-                                :style="boothCategory.color ? 'border-left-color:'+boothCategory.color : ''">
-                                <h3 class="booth-category-title" v-if="boothCategory.name"
-                                    :style="boothCategory.textColor ? 'color:'+boothCategory.textColor : ''">
-                                    {{boothCategory.name}}</h3>
-                                <div class="booth-list">
-                                    <div class="item" v-for="booth in boothCategory.booths" :key="booth.name">
-                                        <a :href="booth.link">
-                                            <img v-if="booth.img" :src="booth.img">
-                                            <p class="name">{{booth.name}}</p>
-                                            <div class="booth-tag" v-if="booth.tags">
-                                                <span v-for="tag in booth.tags">{{tag}}</span>
-                                            </div>
-                                            <p class="description">{{booth.description}}</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script src="./script/vue.min.js"></script>
-            <script>
-                var v = new Vue({
-                    el: '#app',
-                    data: {
-                        boothData: [],
-                        sectionList: []
-                    },
-                    watch: {
-                        boothData: function () {
-                            this.sectionList = this.boothData.map((i) => i.groupName)
-                        }
-                    },
-                    methods: {
-                        gotoSection: function (section) {
-                            console.log('goto section ', section);
-
-                            $('html,body').scrollTo({
-                                toT: $("[data-section=" + section + "]").offset().top,
-                                durTime: 500,
-                                delay: 10,
-                            })
-                        }
-                    }
-                })
-        v.boothData = [
+circleData = [
 {
     "groupName": "摊位区-魅",
     "groupDescription": "官方摊位区",
@@ -851,14 +746,14 @@
             "link": ""
         },
         {
-            "img": "./image/circles/no_image.jpg",
+            "img": "./image/circles/SHI_23.jpg",
             "name": "成都THO",
             "tags":["双日"],
             "description": "时-23",
             "link": ""
         },
         {
-            "img": "./image/circles/SHI_23.jpg",
+            "img": "./image/circles/SHI_24.jpg",
             "name": "浙江THO",
             "tags":["双日"],
             "description": "时-24",
@@ -950,7 +845,7 @@
             "name": "富士山失忆",
             "tags":["Day1"],
             "description": "风-8",
-            "link": "https://weibo.com/7416651041/JblVBz9Fs"
+            "link": ""
         },
         {
             "img": "./image/circles/FENG_09.jpg",
@@ -1000,10 +895,3 @@
 }
 ]
 
-
-      </script>
-      <script>setPersonImg('./image/b/marisa.png');</script>
-    </div>
-</body>
-
-</html>
