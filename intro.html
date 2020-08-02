@@ -29,6 +29,33 @@
   </div>
   <script src="./script/zepto.js"></script>
   <script src="./script/common.js"></script>
+  <script>
+    $(function(){
+      $('.mobile-header-menu').click(function () {
+        $('.sidebar').toggleClass('active');
+      })
+
+      $('.tab-page-header-item').click(function () {
+        var _this = $(this);
+        var name = _this.attr('data-item');
+        var box = _this.closest('.tab-page-box');
+        $(box).find('.tab-page-header-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        $(box).find('.tab-page-content-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        _this.addClass('enabled');
+        $('.tab-page-content-item[data-item='+name+']').each(function() {
+          $(this).addClass('enabled');
+        })
+      })
+      $('.tab-page-box').each(function(){
+        _this = $(this);
+        _this.find('.tab-page-header-item').first().click();
+      })
+    })
+  </script>
   <div class="main">
     <div class="page-intro">
       <div class="page-title">
@@ -40,7 +67,24 @@
           <h2>一般同人区</h2>
           <p>汇集中日同人超过一百个同人社团，东方同人最纯粹的展示与交流！</p>
           <div class="out-link">
-            <a class="button" href="./booth.html"><i class="icon icon-menu"></i>点击查看社团列表</a>
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <div class="tab-page-header-item" data-item="booth-shanghai">上海场</div>
+                <div class="tab-page-header-item" data-item="booth-guangzhou">广州场</div>
+                <div class="tab-page-header-item" data-item="booth-beijing">北京场</div>
+              </div>
+              <div class="tab-page-content">
+                <div class="tab-page-content-item" data-item="booth-shanghai">
+                  <a href="./booth-shanghai.html"><img src="./image/booth-shanghai.jpg"></a>
+                </div>
+                <div class="tab-page-content-item" data-item="booth-guangzhou">
+                  <img src="./image/booth-coming.jpg">
+                </div>
+                <div class="tab-page-content-item" data-item="booth-beijing">
+                  <img src="./image/booth-coming.jpg">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="small">
             <p>如果您是同人社团，您可以<a href="./apply-booth.html">申请参展</a></p>
@@ -60,7 +104,24 @@
           <p>在日本也有TGS（面向主机平台游戏与企业游戏）、博丽电脑试玩会（面向社团PC平台游戏）等类似活动。</p>
           <p>魅知幻想博览会游戏区将会是东方二次创作游戏的最佳的展示机会！</p>
           <div class="out-link">
-            <a class="button" href="./game.html"><i class="icon icon-menu"></i>点击查看游戏试玩区社团</a>
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <div class="tab-page-header-item" data-item="game-shanghai">上海场</div>
+                <div class="tab-page-header-item" data-item="game-guangzhou">广州场</div>
+                <div class="tab-page-header-item" data-item="game-beijing">北京场</div>
+              </div>
+              <div class="tab-page-content">
+                <div class="tab-page-content-item" data-item="game-shanghai">
+                  <a href="./game-shanghai.html"><img src="./image/game-shanghai.jpg"></a>
+                </div>
+                <div class="tab-page-content-item" data-item="game-guangzhou">
+                  <img src="./image/booth-coming.jpg">
+                </div>
+                <div class="tab-page-content-item" data-item="game-beijing">
+                  <img src="./image/booth-coming.jpg">
+                </div>
+              </div>
+            </div>
           </div>
           <div class="small">
             <p>如果您是游戏社团或企业，您可以<a href="./apply-booth.html">申请参展</a></p>
@@ -107,56 +168,75 @@
           <div class="block-img"><img src="./image/figma/kokoro.png" /></div>
           <h2>舞台节目</h2>
           <p>舞台将上演丰富多彩的东方相关舞台节目。游戏、音乐、语言、互动应有尽有！</p>
-          <div class="out-link stage-table">
-            <p class="stage-title">魅知幻想博览会（上海场）上海ComicUp 26 Day1 舞台节目表</p>
-            <div class="item">
-              <span class="l">9:30</span>
-              <span class="r">入场</span>
+          <div class="out-link">
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <div class="tab-page-header-item" data-item="stage-shanghai">上海场</div>
+                <div class="tab-page-header-item" data-item="stage-guangzhou">广州场</div>
+                <div class="tab-page-header-item" data-item="stage-beijing">北京场</div>
+              </div>
+              <div class="tab-page-content">
+                <div class="tab-page-content-item" data-item="stage-shanghai">
+                  <div class="stage-table">
+                    <p class="stage-title">魅知幻想博览会（上海场）上海ComicUp 26 Day1 舞台节目表</p>
+                    <div class="item">
+                      <span class="l">9:30</span>
+                      <span class="r">入场</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">10:30</span>
+                      <span class="r">Why so serious? 游戏展示</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">11:30</span>
+                      <span class="r">ActiveNEETs 远程连线</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">12:30</span>
+                      <span class="r">MyACG 东方大战争比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">13:30</span>
+                      <span class="r">槐南茶馆 对口相声</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">13:50</span>
+                      <span class="r">东方非想天则比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">14:40</span>
+                      <span class="r">东方LiveParty MiniLive</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">15:40</span>
+                      <span class="r">ZUN 特别嘉宾连线</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">16:45</span>
+                      <span class="r">观众互动答题比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">17:35</span>
+                      <span class="r">原作STG表演赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">19:00</span>
+                      <span class="r">散场</span>
+                    </div>
+                    <div class="small">
+                      <p>* 舞台位于全T区域侧面，面向全T区域外的CP大通道。</p>
+                      <p>* 舞台第二日由Comicup进行使用，舞台节目为非东方Project内容。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-page-content-item" data-item="stage-guangzhou">
+                  <p class="empty-box">广州场舞台节目准备中，尽请期待！</p>
+                </div>
+                <div class="tab-page-content-item" data-item="stage-beijing">
+                  <p class="empty-box">北京场舞台节目准备中，尽请期待！</p>
+                </div>
+              </div>
             </div>
-            <div class="item">
-              <span class="l">10:30</span>
-              <span class="r">Why so serious? 游戏展示</span>
-            </div>
-            <div class="item">
-              <span class="l">11:30</span>
-              <span class="r">ActiveNEETs 远程连线</span>
-            </div>
-            <div class="item">
-              <span class="l">12:30</span>
-              <span class="r">MyACG 东方大战争比赛</span>
-            </div>
-            <div class="item">
-              <span class="l">13:30</span>
-              <span class="r">槐南茶馆 对口相声</span>
-            </div>
-            <div class="item">
-              <span class="l">13:50</span>
-              <span class="r">东方非想天则比赛</span>
-            </div>
-            <div class="item">
-              <span class="l">14:40</span>
-              <span class="r">东方LiveParty MiniLive</span>
-            </div>
-            <div class="item">
-              <span class="l">15:40</span>
-              <span class="r">ZUN 特别嘉宾连线</span>
-            </div>
-            <div class="item">
-              <span class="l">16:45</span>
-              <span class="r">观众互动答题比赛</span>
-            </div>
-            <div class="item">
-              <span class="l">17:35</span>
-              <span class="r">原作STG表演赛</span>
-            </div>
-            <div class="item">
-              <span class="l">19:00</span>
-              <span class="r">散场</span>
-            </div>
-          </div>
-          <div class="small">
-            <p>* 舞台位于全T区域侧面，面向全T区域外的CP大通道。</p>
-            <p>* 舞台第二日由Comicup进行使用，舞台节目为非东方Project内容。</p>
           </div>
         </div>
       </div>

@@ -284,7 +284,6 @@ a:hover{
 }
 
 .page-intro .enter {
-  padding: 60px;
   background-size: cover;
   background-position: center center;
   position: relative;
@@ -294,12 +293,13 @@ a:hover{
 
 .page-intro .enter .content {
   line-height: 2;
+  padding: 60px 0;
+  border-bottom: 1px solid #faf2ee;
 }
 
 .page-intro .enter .content h2 {
   padding-bottom: 40px;
   font-size: 32px;
-  font-weight: normal;
 }
 
 .page-intro .enter .content .empty-box {
@@ -315,7 +315,7 @@ a:hover{
 }
 
 .page-intro .enter:nth-child(odd) {
-  background: #f9f9f9;
+  /*background: #f9f9f9;*/
 }
 
 .page-intro .block-img {
@@ -493,7 +493,6 @@ a:hover{
 }
 
 .event-shanghai {
-  background-color: #f9f9f9;
 }
 
 .event-shanghai .item::after {
@@ -513,7 +512,6 @@ a:hover{
 }
 
 .event-beijing {
-  background-color: #f9f9f9;
 }
 
 .event-beijing .item::after {
@@ -572,7 +570,8 @@ a:hover{
   backdrop-filter: blur(20px);
 }
 .booth-section-box h2{
-  font-size: 40px;
+  font-size: 30px;
+  margin-bottom: 4px;
 }
 .booth-section-box p{
   font-size: 14px;
@@ -630,7 +629,6 @@ a:hover{
   margin: 60px 0;
   line-height: 1.8;
   padding-bottom: 60px;
-  border-bottom: 1px solid #faf2ee;
 }
 
 .ticket-block h2{
@@ -669,7 +667,99 @@ a:hover{
   margin-right: 30px;
 }
 
+.tab-page-header{
+  margin-bottom: 20px;
+}
 
+.tab-page-header-item{
+  position: relative;
+  padding: 10px 20px;
+  background: #eee;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: .3s all;
+}
+
+.tab-page-header-item.enabled{
+  background-color: #7588ba;
+  color: #fff;
+}
+
+.tab-page-header-item::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent transparent transparent;
+  transition: .3s all;
+}
+
+.tab-page-header-item.enabled::after{
+  border-color: #7588ba transparent transparent transparent;
+}
+
+.tab-page-content-item{
+  transition: .3s all;
+  display: none;
+  overflow: hidden;
+}
+
+.tab-page-content-item.enabled{
+  max-height: 3000px;
+  display: block;
+  animation: tab-page-content-enter .3s ease-in-out forwards;
+}
+
+.tab-page-content-item img{
+  max-width: 100%;
+}
+
+.disabled-block{
+  opacity: .6;
+}
+
+.event-tag{
+  font-size: 15px;
+  padding: 4px 12px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #999;
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+@keyframes tab-page-content-enter {
+  from {opacity: 0;transform: translateX(-10px);}
+  to {opacity: 1;transform: translateX(0px);}
+}
+
+.page-notice .article,
+.page-staff .article,
+.page-about .article,
+.ticket-block{
+  border-bottom: 2px solid #faf2ee;
+}
+
+.page-booth-title{
+  font-size: 36px;
+  margin: 20px 0 60px 0;
+}
+
+.page-booth-title a{
+  font-size: 15px;
+  font-weight: normal;
+  vertical-align: middle;
+  margin: 0 10px;
+}
 
 @media screen and (max-width: 800px) {
   .mobile-header {

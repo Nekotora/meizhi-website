@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/common.css" />
+    <link rel="stylesheet" href="./image/icon/iconfont.css" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>游戏区列表 - 魅知幻想博览会</title>
+</head>
+
+<body>
+    <div class="mobile-header">
+        <div class="logo"><img src="./image/logo.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
+                class="icon icon-menu"></i></a>
+    </div>
+    <div class="sidebar">
+        <div class="background">
+            <img class="person" id="person-img" src="#" />
+        </div>
+        <div class="content">
+            <div class="logo"><img src="./image/logo.png" /></div>
+            <div class="nav"><a href="index.html">首页</a><a class="active" href="intro.html">活动内容</a><a
+                    href="music.html">魅知幻想歌谣会Live</a><a href="ticket.html">售票信息</a><a href="notice.html">参展须知</a><a
+                    href="apply-booth.html">展位招募</a><a href="apply-custom.html">特殊参展申请</a><a
+                    href="apply-staff.html">Staff
+                    招募</a><a href="about.html">关于展会</a></div>
+        </div>
+    </div>
+    <script src="./script/zepto.js"></script>
+    <script src="./script/zepto.fx.js"></script>
+    <script src="./script/zepto.scroll.js"></script>
+    <script src="./script/common.js"></script>
+    <div class="main">
+        <div class="page-index">
+            <div class="page-title">
+                <h1>游戏区列表</h1>
+            </div>
+            <div class="ch booth-page">
+                <div class="container" id="app">
+                    <h2 :style="'display: none'">Loading...</h2>
+                    <div class="booth-page-inner" :style="'opacity: 1'">
+                        <a class="button" href="./intro.html">返回活动介绍</a>
+                        <div class="booth-nav">
+                            <h4>快速跳转</h4>
+                            <a class="button" v-for="section in sectionList" @click="gotoSection(section)"
+                                href="javascript:;">{{section}}</a>
+                        </div>
+                        <div class="booth-info" class="item" v-for="boothSection in boothData"
+                            :key="boothSection.groupName"
+                            :data-section="boothSection.groupName ? boothSection.groupName : ''">
+                            <div class="booth-section-box" v-pin>
+                                <h2>{{boothSection.groupName}}</h2>
+                                <p>{{boothSection.groupDescription}}</p>
+                            </div>
+                            <div class="booth-category" v-for="boothCategory in boothSection.boothsCategory"
+                                :style="boothCategory.color ? 'border-left-color:'+boothCategory.color : ''">
+                                <h3 class="booth-category-title" v-if="boothCategory.name"
+                                    :style="boothCategory.textColor ? 'color:'+boothCategory.textColor : ''">
+                                    {{boothCategory.name}}</h3>
+                                <div class="booth-list">
+                                    <div class="item" v-for="booth in boothCategory.booths" :key="booth.name">
+                                        <a :href="booth.link">
+                                            <img v-if="booth.img" :src="booth.img">
+                                            <p class="name">{{booth.name}}</p>
+                                            <div class="booth-tag" v-if="booth.tags">
+                                                <span v-for="tag in booth.tags">{{tag}}</span>
+                                            </div>
+                                            <p class="description">{{booth.description}}</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./script/vue.min.js"></script>
+            <script>
+                var v = new Vue({
+                    el: '#app',
+                    data: {
+                        boothData: [],
+                        sectionList: []
+                    },
+                    watch: {
+                        boothData: function () {
+                            this.sectionList = this.boothData.map((i) => i.groupName)
+                        }
+                    },
+                    methods: {
+                        gotoSection: function (section) {
+                            console.log('goto section ', section);
+
+                            $('html,body').scrollTo({
+                                toT: $("[data-section=" + section + "]").offset().top,
+                                durTime: 500,
+                                delay: 10,
+                            })
+                        }
+                    }
+                })
+
+                v.boothData =[
+    {
+        "groupName":"游戏区-东游鉴",
+        "groupDescription":"官方摊位区",
+        "boothsCategory":[
+            {
+                "name":"",
+                "color":"#66ccff",
+                "booths":[
+                    {
+                        "img":"./image/circles/YOU_01.jpg",
+                        "name":"东游鉴",
+                        "description":"游戏区-1~4",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "link":"https://space.bilibili.com/364812769"
+                    },
+                    {
+                        "img":"./image/circles/YOU_02.jpg",
+                        "name":"东方祈华梦",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-2",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_03.jpg",
+                        "name":"东方异闻石",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-3~4",
+                        "link":"http://thwiki.cc"
+                    },
+                    {
+                        "img":"./image/circles/YOU_05.jpg",
+                        "name":"二色幽紫蝶",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-5",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_06.jpg",
+                        "name":"花昙书社",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-6",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_09.jpg",
+                        "name":"凝冰百合花纪录会",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-7",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_11.jpg",
+                        "name":"龙皇社",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-08",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_07.jpg",
+                        "name":"星愿池",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-9",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_10.jpg",
+                        "name":"IGensoukyo",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-10",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_08.jpg",
+                        "name":"大型幻想对撞机",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-11",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_12.jpg",
+                        "name":"造币工坊＆若鹭姬工作室",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-12",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_13.jpg",
+                        "name":"第零研究院",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-13",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_14.jpg",
+                        "name":"Valkyrie游戏工作室",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-14",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_15.jpg",
+                        "name":"Ephemeral Entertainment",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-15~16",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_18.jpg",
+                        "name":"AQUASTYLE",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-17~20",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_21.jpg",
+                        "name":"领域Zero",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-21",
+                        "link":""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "groupName":"Phoenixx",
+        "groupDescription":"",
+        "boothsCategory":[
+            {
+                "name":"",
+                "textColor":"#7588ba",
+                "color":"#66ccff",
+                "booths":[
+                    {
+                        "img":"./image/circles/YOU_P7.jpg",
+                        "name":"幻想讨幻经",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-P1~P2",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_P3.jpg",
+                        "name":"幻走SkyDrift",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-P3~P4",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_P1.jpg",
+                        "name":"舞华苍魔镜",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-P5~P6",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_P5.jpg",
+                        "name":"幻想乡守护者",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-P7~P8",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_P9.jpg",
+                        "name":"不可思议的幻想乡TOD -Reloaded- ",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-17",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_17.jpg",
+                        "name":"不可思议的幻想乡 -Lotus Labyrinth-",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-18",
+                        "link":""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "groupName":"Why so serious?",
+        "groupDescription":"",
+        "boothsCategory":[
+            {
+                "name":"",
+                "color":"#66ccff",
+                "booths":[
+                    {
+                        "img":"./image/circles/YOU_W1.jpg",
+                        "name":"Why so serious?",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-W1~W8",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_W9.jpg",
+                        "name":"Touhou Luna Nights",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-W9",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_W10.jpg",
+                        "name":"Playism",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-W10~W11",
+                        "link":""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "groupName":"MyACG STUDIO",
+        "groupDescription":"",
+        "boothsCategory":[
+            {
+                "name":"",
+                "color":"#66ccff",
+                "booths":[
+                    {
+                        "img":"./image/circles/YOU_M1.jpg",
+                        "name":"东方大战争",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-M1~M6",
+                        "link":""
+                    },
+                    {
+                        "img":"./image/circles/YOU_M7.jpg",
+                        "name":"永远消失的幻想乡",
+                        "tags":[
+                            "Day1",
+                            "Day2"
+                        ],
+                        "description":"游戏区-M7~M8",
+                        "link":""
+                    }
+                ]
+            }
+        ]
+    }
+];
+    </script>
+            <script>setPersonImg('./image/b/marisa.png');</script>
+        </div>
+    </div>
+</body>
+
+</html>
