@@ -9,7 +9,7 @@ body, html {
   width: 100%;
   font-family: "Microsoft YaHei";
   -webkit-font-smoothing: antialiased;
-  color: #333;
+  color: #313131;
   line-height: 1.5;
   overflow-x: hidden;
   font-size: 15px;
@@ -376,7 +376,7 @@ a:hover{
   padding: 60px 0;
 }
 
-.event-preview .container {
+.event-preview .event-item {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -391,7 +391,6 @@ a:hover{
 }
 
 .event-preview .map {
-  border-radius: 20px;
   width: 50%;
   height: 400px;
   overflow: hidden;
@@ -761,6 +760,68 @@ a:hover{
   margin: 0 10px;
 }
 
+.page-music .event-header-title{
+  font-size: 62px !important;
+}
+
+.music-booth-list{
+}
+
+.music-booth-list .item{
+  display: inline-block;
+  width: 122px;
+  height: 140px;
+  text-align: center;
+  vertical-align: top;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.music-booth-list .item img{
+  height: 95px;
+  width: 95px;
+  border-radius: 100%;
+}
+
+.music-booth-list .item p{
+  font-size: 12px;
+}
+
+.page-music .event-item{
+  display: block;
+}
+
+.page-music .event-item .main-content,
+.page-music .event-item .map{
+  float: none;
+  width: 100%;
+  margin-right: 0;
+}
+
+.page-music .event-item .map{
+  height: 260px;
+}
+
+.page-music .event-item .event-title-box{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.page-music .event-item .event-subtitle{
+  margin-top: 10px;
+  opacity: .7;
+}
+
+.page-music .event-item .main-content{
+  margin-bottom: 20px;
+}
+
+.page-music .event-item .links{
+  padding: 20px 0;
+}
+
+
 @media screen and (max-width: 800px) {
   .mobile-header {
     display: block;
@@ -854,5 +915,19 @@ a:hover{
 
   .stage-table .item .r{
     text-align: right;
+  }
+
+  .music-booth-list{
+    text-align: center;
+  }
+
+  .music-booth-list .item{
+    height: 100px;
+    width: 70px;
+    margin: 10px;
+  }
+  .music-booth-list .item img{
+    height: 60px;
+    width: 60px;
   }
 }
