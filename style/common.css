@@ -923,11 +923,19 @@ a:hover{
 
   .music-booth-list .item{
     height: 100px;
-    width: 70px;
-    margin: 10px;
+    width: 23%;
+    margin: 10px 1%;
   }
   .music-booth-list .item img{
-    height: 60px;
-    width: 60px;
+    height: 55px;
+    width: 55px;
+  }
+
+  .page-music .event-header-title{
+    font-size: 32px !important;
+  }
+  .intro .desc p{
+    text-align: left;
+    letter-spacing: 0;
   }
 }
