@@ -811,6 +811,12 @@ a:hover{
   padding: 10px 20px;
 }
 
+.page-iframe,
+.page-iframe .iframe-box,
+.page-iframe .iframe-box iframe{
+  width: 100%;
+  height: 100vh;
+}
 
 @media screen and (max-width: 800px) {
   .mobile-header {
