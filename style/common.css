@@ -61,7 +61,7 @@ body, html {
 a,
 a:link{
   text-decoration: none;
-  color: #bf2d26;
+  color: #EA5455;
 }
 
 a:hover{
@@ -161,7 +161,7 @@ a:hover{
 }
 
 .sidebar .content .nav a.active {
-  color: #bf2d26;
+  color: #EA5455;
   font-weight: bolder;
 }
 
@@ -221,7 +221,7 @@ a:hover{
 }
 
 .button {
-  background: #7588ba;
+  background: #EA5455;
   color: #fff !important;
   display: inline-block;
   padding: 8px 20px;
@@ -230,7 +230,7 @@ a:hover{
 }
 
 .button:hover {
-  background-color: #445b91;
+  background-color: #bf2d26;
   color: #fff;
   text-decoration: none;
 }
@@ -300,12 +300,6 @@ a:hover{
 .page-intro .enter .content h2 {
   padding-bottom: 40px;
   font-size: 32px;
-}
-
-.page-intro .enter .content .empty-box {
-  margin: 40px 0;
-  background: #efefef;
-  padding: 10px 20px;
 }
 
 .page-intro .enter .content .small{
@@ -378,22 +372,23 @@ a:hover{
 
 .event-preview .event-item {
   position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 0;
-  padding-bottom: 0;
   overflow: hidden;
 }
 
 .event-preview .main-content {
-  width: 48%;
-  margin-right: 2%;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.event-preview .main-content > div{
+  width: 50%;
 }
 
 .event-preview .map {
-  width: 50%;
+  width: 100%;
   height: 400px;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .event-preview h1.position {
@@ -411,19 +406,19 @@ a:hover{
   margin-bottom: 10px;
 }
 
-.event-preview .event-title-box::before {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 20%;
-  background-image: linear-gradient(135deg, #FEB692 10%, #EA5455 100%);
-  margin-bottom: 30px;
-}
-
 .event-preview .event-title {
   line-height: 46px;
   font-size: 26px;
   vertical-align: middle;
+}
+
+.event-preview .event-subtitle-box{
+  margin-top: 20px;
+}
+
+.event-preview .event-subtitle-box p{
+  margin: 10px 0;
+  font-size: 15px;
 }
 
 .event-preview .event-title .icon-cross {
@@ -434,45 +429,28 @@ a:hover{
 
 .event-preview .event-subtitle {
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .event-preview .sub-event {
   font-size: 18px;
   margin: 20px 0 30px 0;
-  line-height: 24px;
 }
 
 .event-preview .links {
-  width: 100%;
+  text-align: right;
 }
 
 .event-preview .links .item {
-  position: relative;
-  flex-grow: 1;
   display: inline-block;
   text-decoration: none;
   height: 30px;
   line-height: 30px;
-  margin-right: 40px;
   color: initial;
-}
-
-.event-preview .links .item::after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  opacity: 0.2;
-  transition: 0.3s all;
-}
-
-.event-preview .links .item:hover::after {
-  height: 20px;
-  opacity: 0.8;
+  background-color: #faf2ee;
+  padding: 6px 16px;
+  border-radius: 6px;
+  margin-left: 10px;
 }
 
 .event-preview .links .item i {
@@ -480,7 +458,17 @@ a:hover{
   font-size: 22px;
   z-index: 5;
   float: left;
-  margin-right: 5px;
+  margin-right: 6px;
+  color: #EA5455;
+}
+
+.event-preview .links .item:hover{
+  background-color: #EA5455;
+  color: #fff;
+}
+
+.event-preview .links .item:hover i{
+  color: #fff;
 }
 
 .event-preview .links .item span {
@@ -544,7 +532,7 @@ a:hover{
 }
 
 .booth-list .item a:hover{
-  color: #bf2d26;
+  color: #EA5455;
 }
 .booth-list .item img{
   max-width: 150px;
@@ -590,7 +578,7 @@ a:hover{
 }
 
 .booth-nav{
-  background-color: #efefef;
+  background-color: #faf2ee;
   margin: 20px 0;
   padding: 20px 40px;
 }
@@ -681,7 +669,7 @@ a:hover{
 }
 
 .tab-page-header-item.enabled{
-  background-color: #7588ba;
+  background-color: #EA5455;
   color: #fff;
 }
 
@@ -700,7 +688,7 @@ a:hover{
 }
 
 .tab-page-header-item.enabled::after{
-  border-color: #7588ba transparent transparent transparent;
+  border-color: #EA5455 transparent transparent transparent;
 }
 
 .tab-page-content-item{
@@ -799,13 +787,8 @@ a:hover{
   margin-right: 0;
 }
 
-.page-music .event-item .map{
-  height: 260px;
-}
 
 .page-music .event-item .event-title-box{
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .page-music .event-item .event-subtitle{
@@ -819,6 +802,12 @@ a:hover{
 
 .page-music .event-item .links{
   padding: 20px 0;
+}
+
+.empty-box {
+  margin: 40px 0;
+  background: #faf2ee;
+  padding: 10px 20px;
 }
 
 
