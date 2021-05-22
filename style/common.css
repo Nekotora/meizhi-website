@@ -451,6 +451,7 @@ a:hover{
   padding: 6px 16px;
   border-radius: 6px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .event-preview .links .item i {
@@ -857,7 +858,12 @@ a:hover{
     height: auto;
   }
   .page-index .event-preview .main-content {
+    display: block;
     width: 100%;
+  }
+  .event-preview .main-content > div{
+    width: 100%;
+    text-align: left;
   }
   .page-index .event-preview .map {
     width: 100%;
@@ -885,7 +891,7 @@ a:hover{
     font-size: 13px;
   }
   .booth-page .booth-list .item img{
-    height: 120px;
+    height: auto;
     width: 120px;
   }
   .booth-page .booth-category-title{
