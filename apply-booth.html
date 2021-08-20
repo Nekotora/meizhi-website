@@ -28,63 +28,136 @@
 	</div>
 	<script src="./script/zepto.js"></script>
 	<script src="./script/common.js"></script>
+  <script>
+    $(function(){
+      $('.tab-page-header-item').click(function () {
+        var _this = $(this);
+        var name = _this.attr('data-item');
+        var box = _this.closest('.tab-page-box');
+        $(box).find('.tab-page-header-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        $(box).find('.tab-page-content-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        _this.addClass('enabled');
+        $('.tab-page-content-item[data-item='+name+']').each(function() {
+          $(this).addClass('enabled');
+        })
+      })
+      $('.tab-page-box').each(function(){
+        _this = $(this);
+        _this.find('.tab-page-header-item').first().click();
+      })
+    })
+  </script>
 	<div class="main">
 		<script>setPersonImg('./image/b/satori.png');</script>
 		<div class="page-staff page-content">
 			<div class="page-title">
 				<h1>展位招募</h1>
 			</div>
-			<div class="ch container article">
-				<h2>社团/企业招摊与广告投放说明书</h2>
-				<div class="line"><a class="button" href="./downloads/meizhi-manual-2021.pdf">点击下载社团/企业招摊与广告投放说明书</a>
+      <div class="ch enter">
+      <div class="container content">
+			<div class="out-link">
+				<div class="tab-page-box">
+				  <div class="tab-page-header">
+					<div class="tab-page-header-item" data-item="booth-shanghai">上海场</div>
+					<div class="tab-page-header-item" data-item="booth-beijing">北京场</div>
+				  </div>
+				  <div class="tab-page-content">
+					<div class="tab-page-content-item" data-item="booth-shanghai">
+						<div class="ch container article">
+							<h2>社团/企业招摊与广告投放说明书</h2>
+							<div class="line"><a class="button" href="./downloads/meizhi-manual-2021.pdf">点击下载社团/企业招摊与广告投放说明书</a>
+							</div>
+						</div>
+						<div class="ch container article article_mini">
+							<h2>1. 同人社团区参展申请</h2>
+							<p>欢迎各位东方同人社团、作者报名参展。</p>
+							<p>同人社团参展申请方式：<b>同人社团参展申请</b>
+							<p><a class="button" href="./apply-staff-form.html" target="_blank">点击申请上海场</a></p>
+							<p>截止日期：2021年7月24日</p>
+							<p><b>【申请须知】</b><br>
+								<b>详细规则与要求请您下载页面顶部的社团/企业招摊与广告投放说明书。</b><br>
+								内有详细说明，请务必下载阅读！</p>
+			
+							<ul>
+								<li>每个社团最多申请4个展位。</li>
+								<li>每摊每日摊位费200元/天。</li>
+								<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或搬入数量大于1个摊位正常容量（可与我们联系）。</li>
+								<li>连摊需求可在申摊时的【备注】中自行填写。</li>
+								<li>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</li>
+							</ul>
+							<br>
+							<p>
+							魅知幻想博览会每一场次将设置150～200个同人展位。
+							</p>
+						</div>
+						<div class="ch container article article_mini">
+							<h2>2. 游戏试玩区参展申请</h2>
+							<p>电子游戏试玩区是通过实机提供现场试玩体验的方式向游客展示东方二创游戏的魅力的一个区域。<br>
+								本区域接受PC电脑游戏，以及NSwitch、PS4等主机游戏进行展示试玩。<br><br>
+								可以由东方游戏鉴赏组工作人员协助进行场地布置、维护及游戏介绍工作。<br>
+								常规展位费用700元/整个展期。<br>
+								在游戏展示方面可以提供主机、显示器租赁，代为招募板娘Coser，海报宣传品印刷等服务，一步到位，免去社团筹备器械及场地搭建的烦恼。<br>
+								<br>
+								魅知幻想博览会每一场次将设置30～40个游戏试玩展位。
+							</p>
+							<br>
+							<p>申请方式：<br>
+								参照页面顶部的说明书，发送申请至 <b>play@thonly.name</b> 进行申请。
+							</p>
+						</div>
+						<div class="ch container article article_mini">
+							<h2>3. 企业区参展申请</h2>
+							<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
+								注意：如果您需要销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
+							</p>
+							<p>申请方式：<br>
+								参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
+							</p>
+						</div>
+					</div>
+					<div class="tab-page-content-item" data-item="booth-beijing">
+						<div class="ch container article article_mini">
+							<h2>1. 同人社团区参展申请</h2>
+							<p>欢迎各位东方同人社团、作者报名参展。</p>
+							<p>同人社团参展申请方式：<b>同人社团参展申请</b>
+							<p><a class="button" href="https://wj.qq.com/s2/8892268/87c5/" target="_blank">点击申请北京场</a></p>
+							<p>截止日期：2021年9月17日24:00</p>
+							<p><b>【申请须知】</b><br>
+								<b>详细规则与要求请您下载页面顶部的社团/企业招摊与广告投放说明书。</b><br>
+								内有详细说明，请务必下载阅读！</p>
+			
+							<ul>
+								<li>每个社团最多申请3个展位。</li>
+								<li>每摊每日摊位费200元/天，半摊100元/天。</li>
+								<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或搬入数量大于1个摊位正常容量（可与我们联系）。</li>
+								<li>连摊需求可在申摊时的【备注】中自行填写。</li>
+								<li>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</li>
+							</ul>
+							<br>
+							<p>
+							魅知幻想博览会每一场次将设置40～50个同人展位。
+							</p>
+						</div>
+						<div class="ch container article article_mini">
+							<h2>2. 企业区参展申请</h2>
+							<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
+								注意：如果您需要销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
+							</p>
+							<p>申请方式：<br>
+								参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
+							</p>
+						</div>
+					</div>
+				  </div>
 				</div>
-			</div>
-			<div class="ch container article article_mini">
-				<h2>1. 同人社团区参展申请</h2>
-				<p>欢迎各位东方同人社团、作者报名参展。</p>
-				<p>同人社团参展申请方式：<b>同人社团参展申请</b>
-				<p><a class="button" href="./apply-staff-form.html" target="_blank">点击申请上海场</a></p>
-				<p>截止日期：2021年7月24日</p>
-				<p><b>【申请须知】</b><br>
-					<b>详细规则与要求请您下载页面顶部的社团/企业招摊与广告投放说明书。</b><br>
-					内有详细说明，请务必下载阅读！</p>
+			  </div>
+      </div>
+    </div>
 
-				<ul>
-					<li>每个社团最多申请4个展位。</li>
-					<li>每摊每日摊位费200元/天。</li>
-					<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或搬入数量大于1个摊位正常容量（可与我们联系）。</li>
-					<li>连摊需求可在申摊时的【备注】中自行填写。</li>
-					<li>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</li>
-				</ul>
-				<br>
-				魅知幻想博览会每一场次将设置150～200个同人展位。
-				</p>
-			</div>
-			<div class="ch container article article_mini">
-				<h2>2. 游戏试玩区参展申请</h2>
-				<p>电子游戏试玩区是通过实机提供现场试玩体验的方式向游客展示东方二创游戏的魅力的一个区域。<br>
-					本区域接受PC电脑游戏，以及NSwitch、PS4等主机游戏进行展示试玩。<br><br>
-					可以由东方游戏鉴赏组工作人员协助进行场地布置、维护及游戏介绍工作。<br>
-					常规展位费用700元/整个展期。<br>
-					在游戏展示方面可以提供主机、显示器租赁，代为招募板娘Coser，海报宣传品印刷等服务，一步到位，免去社团筹备器械及场地搭建的烦恼。<br>
-					<br>
-					魅知幻想博览会每一场次将设置30～40个游戏试玩展位。
-				</p>
-				<br>
-				<p>申请方式：<br>
-					参照页面顶部的说明书，发送申请至 <b>play@thonly.name</b> 进行申请。
-				</p>
-			</div>
-
-			<div class="ch container article article_mini">
-				<h2>3. 企业区参展申请</h2>
-				<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
-					注意：如果您需要销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
-				</p>
-				<p>申请方式：<br>
-					参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
-				</p>
-			</div>
 		</div>
 	</div>
 </body>

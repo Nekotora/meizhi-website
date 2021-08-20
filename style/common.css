@@ -235,6 +235,21 @@ a:hover{
   text-decoration: none;
 }
 
+.button-blue {
+  background: #1dc4f0;
+  color: #fff !important;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button-blue:hover {
+  background-color: #12b7f5;
+  color: #fff;
+  text-decoration: none;
+}
+
 .button .icon{
   display: inline-block;
   font-size: 20px;
@@ -375,17 +390,26 @@ a:hover{
   overflow: hidden;
 }
 
-.event-preview .main-content {
-  margin-bottom: 20px;
+.event-preview .container {
+  position: relative;
   display: flex;
+  flex-wrap: nowrap;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
 }
 
-.event-preview .main-content > div{
-  width: 50%;
+.event-preview .main-content {
+  width: 48%;
+  margin-right: 2%;
 }
+
+/* .event-preview .main-content > div{
+  width: 50%;
+} */
 
 .event-preview .map {
-  width: 100%;
+  width: 50%;
   height: 400px;
   overflow: hidden;
   border-radius: 15px;
@@ -438,7 +462,7 @@ a:hover{
 }
 
 .event-preview .links {
-  text-align: right;
+  text-align: start;
 }
 
 .event-preview .links .item {
@@ -691,6 +715,41 @@ a:hover{
 .tab-page-header-item.enabled::after{
   border-color: #EA5455 transparent transparent transparent;
 }
+
+
+.tab-page-header-item-blue{
+  position: relative;
+  padding: 10px 20px;
+  background: #eee;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: .3s all;
+}
+
+.tab-page-header-item-blue.enabled{
+  background-color: #1dc4f0;
+  color: #fff;
+}
+
+.tab-page-header-item-blue::after{
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 7px solid;
+  border-color: transparent transparent transparent transparent;
+  transition: .3s all;
+}
+
+.tab-page-header-item-blue.enabled::after{
+  border-color: #1dc4f0 transparent transparent transparent;
+}
+
 
 .tab-page-content-item{
   transition: .3s all;
