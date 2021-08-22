@@ -836,14 +836,19 @@ a:hover{
   font-size: 12px;
 }
 
-.page-music .event-item{
+/* .page-music .event-item{
   display: block;
+} */
+
+.page-music .event-item .main-content{
+  float: none;
+  width: 48%;
+  margin-right: 2%;
 }
 
-.page-music .event-item .main-content,
 .page-music .event-item .map{
   float: none;
-  width: 100%;
+  width: 50%;
   margin-right: 0;
 }
 
