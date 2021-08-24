@@ -660,6 +660,12 @@ a:hover{
     color: #777;
 }
 
+.ticket-divider {
+  line-height: 46px;
+  font-size: 24px;
+  vertical-align: middle;
+}
+
 .out-link{
   padding: 20px 0;
 }
