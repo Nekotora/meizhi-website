@@ -61,7 +61,7 @@ body, html {
 a,
 a:link{
   text-decoration: none;
-  color: #EA5455;
+  color: #ae8b0d;
 }
 
 a:hover{
@@ -82,8 +82,8 @@ a:hover{
 }
 
 .mobile-header .logo img {
-  height: 40px;
-  padding: 10px 0;
+  height: 60px;
+  padding: 0px 0;
 }
 
 .mobile-header .right {
@@ -101,7 +101,7 @@ a:hover{
 }
 
 .sidebar {
-  background-color: #faf2ee;
+  background-color: #f3eae2;
   width: 30%;
   height: 100%;
   position: fixed;
@@ -135,7 +135,7 @@ a:hover{
   position: relative;
   z-index: 3;
   text-align: right;
-  padding-top: 10%;
+  padding-top: 1%;
 }
 
 .sidebar .content .logo {
@@ -143,12 +143,8 @@ a:hover{
 }
 
 .sidebar .content .logo img {
-  max-height: 120px;
+  max-height: 200px;
   max-width: 100%;
-}
-
-.sidebar .content .nav {
-  padding-top: 5%;
 }
 
 .sidebar .content .nav a {
@@ -161,14 +157,14 @@ a:hover{
 }
 
 .sidebar .content .nav a.active {
-  color: #EA5455;
+  color: #cf8200;
   font-weight: bolder;
 }
 
 .sidebar .content .nav a.active::before{
   content: '';
   border-radius: 100%;
-  background-color: #EA5455;
+  background-color: #cf8200;
   height: 10px;
   width: 10px;
   display: inline-block;
@@ -186,17 +182,17 @@ a:hover{
 }
 
 .main .page-title {
-  position: absolute;
-  right: -12px;
-  top: -7vw;
+  position: fixed;
+  top: 0;
+  right: -6px;
   z-index: -1;
-  font-size: 3.6vw;
+  font-size: 3.8vw;
   font-weight: bold;
   color: #faf2ee;
   line-height: 1;
   user-select: none;
   transform: rotate(-90deg);
-  transform-origin: right bottom;
+  transform-origin: right bottom;title
 }
 
 .page-content {
@@ -221,7 +217,7 @@ a:hover{
 }
 
 .button {
-  background: #EA5455;
+  background: #debc36;
   color: #fff !important;
   display: inline-block;
   padding: 8px 20px;
@@ -230,7 +226,7 @@ a:hover{
 }
 
 .button:hover {
-  background-color: #bf2d26;
+  background-color: #ae8f17;
   color: #fff;
   text-decoration: none;
 }
@@ -256,6 +252,9 @@ a:hover{
   margin-right: 5px;
 }
 
+.page-index{
+  padding-bottom: 160px;
+}
 .page-index .intro {
   position: relative;
   font-size: 18px;
@@ -270,9 +269,12 @@ a:hover{
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 600px;
   background: url(../image/intro-post.jpg);
   background-size: cover;
+}
+.page-index .intro .intro-post.shth11 {
+  height: 1100px;
 }
 
 .page-index .intro .intro-post::after {
@@ -290,12 +292,25 @@ a:hover{
   position: relative;
   z-index: 5;
   padding-top: 600px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
+}
+.page-index .intro .desc.shth11 {
+  padding-top: 1080px;
 }
 
 .page-index .intro .desc .event-title {
   font-size: 80px;
   margin-bottom: 40px;
+}
+
+.page-index .intro .desc h1 {
+  line-height: 1.2;
+}
+
+.page-index .intro .desc h2.event-title {
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
 .page-intro .enter {
@@ -373,16 +388,21 @@ a:hover{
   font-size: 13px;
   margin-top: 20px;
 }
-
-.staff-list span {
+.staff-list p {
+  justify-content: space-between;
+}
+.staff-list .left-span {
   width: 100px;
   float: left;
   text-align: right;
   margin-right: 20px;
 }
+.staff-list span {
+  display: flow-root;
+}
 
 .event-preview {
-  padding: 60px 0;
+  padding: 30px 0;
 }
 
 .event-preview .event-item {
@@ -426,7 +446,7 @@ a:hover{
 }
 
 .event-preview .event-title-box {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-bottom: 10px;
 }
 
@@ -437,7 +457,7 @@ a:hover{
 }
 
 .event-preview .event-subtitle-box{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .event-preview .event-subtitle-box p{
@@ -484,11 +504,11 @@ a:hover{
   z-index: 5;
   float: left;
   margin-right: 6px;
-  color: #EA5455;
+  color: #cf8200;
 }
 
 .event-preview .links .item:hover{
-  background-color: #EA5455;
+  background-color: #debc36;
   color: #fff;
 }
 
@@ -514,29 +534,21 @@ a:hover{
 }
 
 .event-shanghai .item::after {
-  background-color: #EA5455;
+  background-color: #cf8200;
 }
 
 .event-shanghai .event-title-box::before {
   background-image: linear-gradient(135deg, #FEB692 10%, #EA5455 100%);
 }
 
-.event-guangzhou .item::after {
-  background-color: #0396FF;
+.event-other {
 }
 
-.event-guangzhou .event-title-box::before {
-  background-image: linear-gradient(135deg, #ABDCFF 10%, #0396FF 100%);
-}
-
-.event-beijing {
-}
-
-.event-beijing .item::after {
+.event-other .item::after {
   background-color: #BB4E75;
 }
 
-.event-beijing .event-title-box::before {
+.event-other .event-title-box::before {
   background-image: linear-gradient(135deg, #FF9D6C 10%, #BB4E75 100%);
 }
 
@@ -706,7 +718,7 @@ a:hover{
 }
 
 .tab-page-header-item.enabled{
-  background-color: #EA5455;
+  background-color: #debc36;
   color: #fff;
 }
 
@@ -725,7 +737,7 @@ a:hover{
 }
 
 .tab-page-header-item.enabled::after{
-  border-color: #EA5455 transparent transparent transparent;
+  border-color: #debc36 transparent transparent transparent;
 }
 
 
@@ -776,7 +788,7 @@ a:hover{
 }
 
 .tab-page-content-item img{
-  max-width: 100%;
+  max-width: 50%;
 }
 
 .disabled-block{
@@ -824,7 +836,12 @@ a:hover{
   font-size: 62px !important;
 }
 
+.article_mini li {
+  padding-left: 10px;
+}
+
 .music-booth-list{
+  margin-top: 80px;
 }
 
 .music-booth-list .item{
@@ -894,7 +911,7 @@ a:hover{
   height: 100vh;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .mobile-header {
     display: block;
   }
@@ -913,14 +930,21 @@ a:hover{
     transition: 0.3s all;
     text-align: center;
   }
+
   .sidebar .content{
     text-align: center;
+  }
+  .sidebar .content .nav {
+    padding-top: 68px;
   }
   .sidebar .logo {
     display: none;
   }
   .sidebar.active {
     max-height: 999px;
+  }
+  .page-index{
+    padding-bottom: 80px;
   }
   .page-index .intro {
     font-size: 14px;
@@ -929,11 +953,21 @@ a:hover{
   .page-index .intro .intro-post {
     height: 300px;
   }
+  .page-index .intro .intro-post.shth11 {
+    height: 800px;
+  }
   .page-index .intro .desc {
-    padding-top: 200px;
+    padding-top: 240px;
+  }
+  .page-index .intro .desc.shth11 {
+    padding-top: 740px;
   }
   .page-index .intro .desc .event-title {
     font-size: 38px;
+  }
+  .page-index .intro .desc h2.event-title {
+    font-size: 30px;
+    margin-bottom: 10px;
   }
   .page-index .event-preview .container {
     display: block;
@@ -947,9 +981,13 @@ a:hover{
     width: 100%;
     text-align: left;
   }
+  .event-preview h1.position {
+    font-size: 60px;
+    line-height: 2.1;
+  }
   .page-index .event-preview .map {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 15px;
     height: 200px;
   }
   .page-intro .enter {
