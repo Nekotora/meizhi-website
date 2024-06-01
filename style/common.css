@@ -5,8 +5,6 @@
 }
 
 body, html {
-  height: 100%;
-  width: 100%;
   font-family: "Microsoft YaHei";
   -webkit-font-smoothing: antialiased;
   color: #313131;
@@ -140,6 +138,7 @@ a:hover{
 
 .sidebar .content .logo {
   padding: 0 40px;
+  margin: 10px 0;
 }
 
 .sidebar .content .logo img {
@@ -175,6 +174,22 @@ a:hover{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.sidebar .content .nav .bottom{
+  font-size: 13px;
+  opacity: .8;
+  display: inline-block;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.sidebar .content .nav .bottom a {
+  line-height: 40px;
+  height: 40px;
+  border-radius: 40px;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
 .main {
   margin-left: 30%;
   position: relative;
@@ -192,7 +207,7 @@ a:hover{
   line-height: 1;
   user-select: none;
   transform: rotate(-90deg);
-  transform-origin: right bottom;title
+  transform-origin: right bottom;
 }
 
 .page-content {
@@ -1052,5 +1067,12 @@ a:hover{
   .intro .desc p{
     text-align: left;
     letter-spacing: 0;
+  }
+
+  .main .page-title {
+    position: fixed;
+    top: 20px;
+    right: -6px;
+    font-size: 8vw;
   }
 }
