@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style/common.css?v=20200716" />
+  <link rel="stylesheet" href="./image/icon/iconfont.css?v=20200716" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>イベント内容 - 魅知幻想博覧会</title>
+</head>
+
+<body>
+  <div class="mobile-header">
+    <div class="logo"><img src="./image/logo2.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
+        class="icon icon-menu"></i>メニュー</a>
+  </div>
+  <div class="sidebar">
+    <div class="background"><img class="person" id="person-img" src="#" /></div>
+    <div class="content">
+      <div class="logo"><img src="./image/logo2.png" /></div>
+      <div class="nav"><a href="index.html">トップページ</a><a class="active" href="intro.html">イベント内容</a><a
+          href="https://shthonly.org/">上海THONLY·東方露明境</a><a href="ticket.html">チケット販売</a><a href="notice.html">参加者へ</a><a
+          href="apply-booth.html">サークル 募集</a><a href="apply-custom.html">特別出展申し込み</a><a href="about.html">展示会について</a><a href="../">中国語ページへ</a></div>
+    </div>
+  </div>
+  <script src="./script/zepto.js"></script>
+  <script src="./script/common.js"></script>
+  <script>
+    $(function(){
+      $('.tab-page-header-item').click(function () {
+        var _this = $(this);
+        var name = _this.attr('data-item');
+        var box = _this.closest('.tab-page-box');
+        $(box).find('.tab-page-header-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        $(box).find('.tab-page-content-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        _this.addClass('enabled');
+        $('.tab-page-content-item[data-item='+name+']').each(function() {
+          $(this).addClass('enabled');
+        })
+      })
+      $('.tab-page-box').each(function(){
+        _this = $(this);
+        _this.find('.tab-page-header-item').first().click();
+      })
+    })
+  </script>
+  <div class="main">
+    <div class="page-intro">
+      <div class="page-title">
+        <h1>イベント内容</h1>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/patchouli.png" /></div>
+          <h2>一般同人エリア</h2>
+          <p>中日のあらゆる同人サークルを集まれ、東方同人最も純粋な展示交流エリアになる！</p>
+          <div class="out-link">
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <!-- 
+                <div class="tab-page-header-item tab-page-header-item-blue" data-item="booth-beijing">北京场</div>
+                -->
+                <div class="tab-page-header-item" data-item="booth-shanghai">2023星虹澄空</div>
+              </div>
+              <div class="tab-page-content">
+                <!-- 
+                <div class="tab-page-content-item" data-item="booth-beijing">
+                  <a href="./apply-booth.html"><img src="./image/booth-shanghai-2021.jpg"></a>
+                </div>
+                -->
+                <div class="tab-page-content-item" data-item="booth-shanghai">
+                  <a href="./apply-booth.html"><img src="./image/booth-shanghai-2021.jpg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <p>サークル主催者の方は<a href="./apply-booth.html">こちらへ</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/maru.png" /></div>
+          <h2>ゲーム試遊エリア</h2>
+          <p>ゲーム試遊エリアは現場で体験版を提供し、参加者に東方同人ゲームの魅力を展示する活動である。</p>
+          <p>本エリアはPC、PS4、 Switchなどの端末で試遊を提供します。</p>
+          <p>魅知幻想博覧会の試遊エリアのモデルはこれまで国内で何度も実践されており、十分に成熟しています。</p>
+          <p> 日本にもTGS（家庭用ゲーム機と企業ゲーム向け）博麗電脳試遊会（サークルと㍶端ゲーム向け）のイベントもあります。</p>
+          <p>魅知幻想博覧会の試遊エリアは東方同人ゲームの魅力を展示する最高のチャンスである！</p>
+          <div class="out-link">
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <div class="tab-page-header-item" data-item="game-shanghai">2023星虹澄空</div>
+              </div>
+              <div class="tab-page-content">
+                <div class="tab-page-content-item" data-item="game-shanghai">
+                  <a href="./apply-booth.html"><img src="./image/game-shanghai-2021.jpg"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="small">
+            <p>サークル主催者と企業参加者の方は<a href="./apply-booth.html">こちらへ</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/sumire.png" /></div>
+          <h2>神社实景搭建与场内活动</h2>
+          <p>神社景观区以博丽神社为蓝本打造了极具东方特色的景观搭建。</p>
+          <p>社务所摊位不仅有本次博览会精选的官方物料的展示与贩售，还设计了摇奖、集章等等丰富多彩的趣味活动，期待您前来参与！</p>
+          <p>拜会灵梦小姐之前，不要忘记带上社务所的绘马与御守喔！</p>
+          <div class="out-link stage-table">
+            <p class="stage-title">特色活动</p>
+            <div class="item">
+              <span class="l">会场巡回集章</span>
+              <span class="r">前往分布于会场各处的巡回集章点，完成集章任务吧！</span>
+            </div>
+            <div class="item">
+              <span class="l">社团购物摇奖</span>
+              <span class="r">在参与社团的摊位购入作品，就有机会在社务所摇奖哦！</span>
+            </div>
+            <div class="item">
+              <span class="l">社务所授与处</span>
+              <span class="r">神社社务所的官方物料展示与贩售。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/akyuu.png" /></div>
+          <h2>东方科普与展示区</h2>
+          <p>东方科普与展示区是以普及东方一设相关知识为目的，并展示官方游戏，漫画，音乐的区域。</p>
+          <p>展示区内汇集了全部29作原作的现场试玩，所有的原作官方书籍与音乐CD的展示。</p>
+          <p>以及由「<a href="https://thwiki.cc" target="_blank">THBWiki</a>」的编辑们倾力制作的全长30米，横贯25年历史的东方大年表。</p>
+          <p>同时本区域内还布置了我们精心制作的包含了从同人概念、原作、二次创作、世界观、活动展会、社会影响等诸多知识的科普展板，为大家带来通俗易懂的一设相关知识与介绍。无论是资深爱好者还是初次接触的新人都可以从中受益匪浅。
+          </p>
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/kokoro.png" /></div>
+          <h2>舞台节目</h2>
+          <p>舞台将上演丰富多彩的东方相关舞台节目。游戏、音乐、语言、互动应有尽有！</p>
+          <div class="out-link">
+            <div class="tab-page-box">
+              <div class="tab-page-header">
+                <div class="tab-page-header-item" data-item="stage-guangzhou">广州场</div>
+                <div class="tab-page-header-item" data-item="stage-beijing">北京场</div>
+                <div class="tab-page-header-item" data-item="stage-shanghai">上海场</div>
+              </div>
+              <div class="tab-page-content">
+                <div class="tab-page-content-item" data-item="stage-shanghai">
+                  <div class="stage-table">
+                    <p class="stage-title">魅知幻想博览会（上海场）上海ComicUp 26 Day1 舞台节目表</p>
+                    <div class="item">
+                      <span class="l">9:30</span>
+                      <span class="r">入场</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">10:30</span>
+                      <span class="r">Why so serious? 游戏展示</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">11:30</span>
+                      <span class="r">ActiveNEETs 远程连线</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">12:30</span>
+                      <span class="r">MyACG 东方大战争比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">13:30</span>
+                      <span class="r">槐南茶馆 对口相声</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">13:50</span>
+                      <span class="r">东方非想天则比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">14:40</span>
+                      <span class="r">东方LiveParty MiniLive</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">15:40</span>
+                      <span class="r">ZUN 特别嘉宾连线</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">16:45</span>
+                      <span class="r">观众互动答题比赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">17:35</span>
+                      <span class="r">原作STG表演赛</span>
+                    </div>
+                    <div class="item">
+                      <span class="l">19:00</span>
+                      <span class="r">散场</span>
+                    </div>
+                    <div class="small">
+                      <p>* 舞台位于全T区域侧面，面向全T区域外的CP大通道。</p>
+                      <p>* 舞台第二日由Comicup进行使用，舞台节目为非东方Project内容。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-page-content-item" data-item="stage-guangzhou">
+                  <p class="empty-box">广州场舞台节目准备中，尽请期待！</p>
+                </div>
+                <div class="tab-page-content-item" data-item="stage-beijing">
+                  <p class="empty-box">北京场舞台节目准备中，尽请期待！</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/reimu.png" /></div>
+          <h2>博丽神社例大祭专区</h2>
+          <p>博丽神社例大祭官方参展，为您带来例大祭相关的精美周边！</p>
+        </div>
+      </div> -->
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/peace.png" /></div>
+          <h2>企業展示エリア</h2>
+          <!-- <p>标准展位展区集合了DMM Pictures、博丽神社例大祭、AKIBAHOBBY、MineCraft幻想乡等展位，</p><p>为您带来包括丰富多样的东方授权企业商品的展示与贩售、激动人心VR幻想乡游历体验等精彩内容，</p><p>尽显东方世界的魅力。</p> -->
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/yukari.png" /></div>
+          <h2>地方THO展示エリア</h2>
+          <p>地方THO展示エリアは「鹤组」によって企画した中国各地のTHOの魅力を展示する活動である。</p>
+          <p>今回は各地のTHO主催者が出展して地方THOグッズも頒布していますので、絶対に見逃しないでください。</p>
+          <p>今回の魅知幻想博覧会もコロナで中止されたTHOへの支援である。</p>
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/wolf.png" /></div>
+          <h2>ボードゲームエリア</h2>
+          <p>今回は東方ボードゲームエリアも設立して様々な面白い東方ボードゲームの体験ができます！</p>
+          <p>ここでゲームを楽しめる同時に他の東方愛好者と交流しながら友達もできます！時間の流れを忘れる楽しさもあります！</p>
+        </div>
+      </div>
+      <div class="ch enter">
+        <div class="container content">
+          <div class="block-img"><img src="./image/figma/guiji.png" /></div>
+          <h2>その他のコンテンツ</h2>
+          <p>お楽しみください……！</p>
+        </div>
+      </div>
+    </div>
+    <script>setPersonImg('./image/b/marisa.png');</script>
+  </div>
+</body>
+
+</html>

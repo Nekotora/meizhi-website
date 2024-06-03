@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./style/common.css" />
+	<link rel="stylesheet" href="./image/icon/iconfont.css?v=20200609" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>摊位招募 - 魅知幻想博览会2023上海场·星虹澄空</title>
+</head>
+
+<body>
+	<div class="mobile-header">
+		<div class="logo"><img src="./image/logo2.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
+				class="icon icon-menu"></i>菜单</a>
+	</div>
+	<div class="sidebar">
+		<div class="background"><img class="person" id="person-img" src="#" /></div>
+		<div class="content">
+			<div class="logo"><img src="./image/logo2.png" /></div>
+			<div class="nav"><a href="index.html">首页</a><a href="intro.html">活动内容</a><a href="music.html">上海THONLY·东方露明境</a><a
+					href="ticket.html">售票信息</a><a href="notice.html">参展须知</a><a class="active" href="apply-booth.html">展位招募</a><a
+					href="apply-custom.html">特殊参展申请</a><a href="apply-staff.html">Staff 招募</a><a href="about.html">关于展会</a><a href="./jp/index.html">日本語ページへ</a></div>
+		</div>
+	</div>
+	<script src="./script/zepto.js"></script>
+	<script src="./script/common.js"></script>
+  <script>
+    $(function(){
+      $('.tab-page-header-item').click(function () {
+        var _this = $(this);
+        var name = _this.attr('data-item');
+        var box = _this.closest('.tab-page-box');
+        $(box).find('.tab-page-header-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        $(box).find('.tab-page-content-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        _this.addClass('enabled');
+        $('.tab-page-content-item[data-item='+name+']').each(function() {
+          $(this).addClass('enabled');
+        })
+      })
+      $('.tab-page-box').each(function(){
+        _this = $(this);
+        _this.find('.tab-page-header-item').first().click();
+      })
+    })
+  </script>
+	<div class="main">
+		<script>setPersonImg('./image/b/satori.png');</script>
+		<div class="page-staff page-content">
+			<div class="page-title">
+				<h1>展位招募</h1>
+			</div>
+      <div class="ch enter">
+      <div class="container content">
+			<div class="out-link">
+				
+				<div class="ch container article">
+					<h2>社团/企业招摊与广告投放说明书</h2>
+					<div class="line"><a class="button" href="./downloads/meizhi-manual-2023.pdf">点击下载社团/企业招摊与广告投放说明书</a>
+					</div>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>1. 同人摊位区参展申请</h2>
+					<p>本区域接受 <b>标准同人社团</b>、<b>活动组委会</b>、<b>桌游游玩社团</b> 三种类型摊位的申请。</p>
+					<p>欢迎各位东方同人社团、作者、活动主办方报名参展：</p>
+					<p><a class="button" href="./apply-circle-form.html" target="_blank">点击申请上海场</a></p>
+					<p>或复制链接访问：https://wj.qq.com/s2/12389346/62c0/</p>
+					<p>截止日期：2023年7月31日</p>
+					<p><b>【申请须知】</b><br>
+						<b>详细规则与要求请您下载页面顶部的社团/企业招摊与广告投放说明书。</b><br>
+						内有详细说明，请务必下载阅读！</p>
+					<p>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</p>
+	
+					<p><b>标准同人社团</b></p>
+					<p>
+					<ul>
+						<li>仅接受持有至少一种以上自制作品的社团申请（个人作者可创建个人社团进行申请）。</li>
+						<li>以代理他人或引进海外社团参展的为主要参展内容则必须以被代理/引进社团的名义申请摊位。</li>
+						<li>每个社团最多申请4个展位，每摊摊位费200元，包含2张摊主证。每个摊位可补2张证，补证费180。</li>
+						<li>参展社团若有<b>仅在本展会首发的非代理高创作性作品可申请减免1个摊位的摊位费</b>，具体见申请表。</li>
+						<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或货物数量大于1个摊位容积（可与我们联系确认）。</li>
+						<li>如果有连摊需求可在申摊时的【连摊需求】中自行填写。</li>
+					</ul>
+					</p>
+					<p><b>活动组委会</b></p>
+					<ul>
+						<li>仅接受2020年至2023年举办过或已经公开宣布将在2023年内举办的活动组委会申请。</li>
+						<li><b>纯线上的活动或者线下活动均可以申请</b>。注：纯线上活动有规模与影响力要求，过审门槛更高。</li>
+						<li>每个组委会最多申请2个摊位，<b>首个摊位免摊位费</b>（仅包含1张摊主证），追加摊位摊位费200元。可补2张证，补证费180。</li>
+						<li>同一个城市内的多个活动，如无合理理由则要求合并申请，否则不予通过。</li>
+						<li>如果有连摊需求可在申摊时的【连摊需求】中自行填写，仅能与其他组委会类型摊位连摊。</li>
+					</ul>
+					<p><b>桌游游玩社团</b></p>
+					<ul>
+						<li>仅接受持有至少一种以上自制桌游作品的社团申请。</li>
+						<li>每社团摊位费400元/天，仅能申请一个，包含2张摊主证。可补2张证，补证费180。</li>
+						<li>包含<b>1个位于同人摊位区域内的一张纵深加桌摊位</b>，并尽量安排至边摊或靠近边摊。</li>
+						<li>包含<b>1个位于桌游游玩区域内的一张1米×1米的体验桌</b>，该桌仅可游玩申请社团的桌游。</li>
+						<li>如果在同人摊位区域内有连摊需求可在申摊时的【连摊需求】中自行填写。</li>
+						<li>如需更多数量的标准同人社团摊位，可使用同一个社团名义再申请标准同人社团摊位，将与桌游纵深加桌摊位相连。</li>
+					</ul>
+					<br>
+					<p>
+					魅知幻想博览会2023·星虹澄空将设置150～200个同人摊位。
+					</p>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>2. 电子游戏试玩区参展申请</h2>
+					<p>电子游戏试玩区是通过实机提供现场试玩体验的方式向游客展示东方二创游戏的魅力的一个区域。<br>
+						本区域接受PC电脑游戏，以及NSwitch、PS4等主机游戏进行展示试玩。<br><br>
+						本展会将协助社团进行场地布置与游戏安装工作，并在现场安排人员维持秩序。<br>
+						常规展位费用700元/整个展期，包含一张制式桌、一套电脑设备、一面KT板及2张摊主证。<br>
+						本展会可以提供额外主机、显示器的租赁，海报宣传品印刷等服务，一步到位，免去社团筹备器械及场地搭建的烦恼。<br>
+						若社团自备主机，可减免100元展位费用，但需社团自行调试设备。<br>
+						<br>
+					魅知幻想博览会2023·星虹澄空将设置30～40个电子游戏试玩展位。
+					</p>
+					<br>
+					<p>申请方式：<br>
+						<p><a class="button" href="./apply-circle-form.html" target="_blank">点击申请上海场</a></p>
+						<p>或复制链接访问：https://wj.qq.com/s2/12389346/62c0/</p>
+					</p>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>3. 企业区参展申请</h2>
+					<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
+						注意：如果您需要在企业区销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
+					</p>
+					<p>申请方式：<br>
+						参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
+					</p>
+				</div>
+
+				<div class="tab-page-box">
+				  <div class="tab-page-header">
+					<!-- <div class="tab-page-header-item tab-page-header-item-blue" data-item="booth-beijing">北京场</div> -->
+					<!-- <div class="tab-page-header-item" data-item="booth-shanghai">2023·星虹澄空</div> -->
+				  </div>
+				  <div class="tab-page-content">
+						<div class="tab-page-content-item" data-item="booth-shanghai">
+						</div>
+						<!-- 
+							<div class="tab-page-content-item" data-item="booth-beijing">
+								<div class="ch container article article_mini">
+									<h2>1. 同人社团区参展申请</h2>
+									<p>欢迎各位东方同人社团、作者报名参展。</p>
+									<p>同人社团参展申请方式：<b>同人社团参展申请</b>
+									<br />	
+									<b>已延期，请等待后续消息</b>
+									<p><a class="button button-blue" href="#" target="_blank">点击申请北京场</a></p>
+									<p>截止日期：2021年9月17日24:00</p>
+									<p><b>【申请须知】</b><br>
+									<b>详细规则请您点击申请北京场进行浏览</b></p>
+									<ul>
+										<li>每个社团最多申请3个展位。</li>
+										<li>每摊每日摊位费200元/天，半摊100元/天。</li>
+										<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或搬入数量大于1个摊位正常容量（可与我们联系）。</li>
+										<li>连摊需求可在申摊时的【备注】中自行填写。</li>
+										<li>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</li>
+									</ul>
+									<br>
+									<p>
+									魅知幻想博览会2021北京场将设置50～60个同人展位。
+									</p>
+								</div>
+								<div class="ch container article article_mini">
+									<h2>2. 企业区参展申请</h2>
+									<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
+										注意：如果您需要销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
+									</p>
+									<p>申请方式：<br>
+										参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
+									</p>
+								</div>
+							</div>
+							 -->
+					
+				  </div>
+				</div>
+			  </div>
+      </div>
+    </div>
+
+		</div>
+	</div>
+</body>
+
+</html>

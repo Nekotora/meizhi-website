@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style/common.css" />
+  <link rel="stylesheet" href="./image/icon/iconfont.css?v=20200609" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>第十一回上海THONLY·東方露明境</title>
+</head>
+
+<body>
+  <div class="mobile-header">
+    <div class="logo"><img src="./image/logo2.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
+        class="icon icon-menu"></i>メニュー</a>
+  </div>
+  <div class="sidebar">
+    <div class="background"><img class="person" id="person-img" src="./image/b/xiangzi.png" /></div>
+    <div class="content">
+      <div class="logo"><img src="./image/logo2.png" /></div>
+      <div class="nav"><a href="index.html">トップページ</a><a href="intro.html">イベント内容</a><a class="active"
+          href="https://shthonly.org/">上海THONLY·東方露明境</a><a href="ticket.html">チケット販売</a><a href="notice.html">参加者へ</a><a
+          href="apply-booth.html">サークル 募集</a><a href="apply-custom.html">特別出展申し込み</a><a href="about.html">展示会について</a><a href="../">中国語ページへ</a></div>
+    </div>
+  </div>
+</div>
+  <script src="./script/zepto.js"></script>
+  <script src="./script/common.js"></script>
+  <div class="main">
+    <div class="page-index page-music">
+      <div class="page-title">
+        <h1>イベントについて</h1>
+      </div>
+      <div class="ch meta intro">
+        <div class="intro-post shth11" style="background-image: url(./image/intro-post-shth11.jpg);"></div>
+        <div class="container desc shth11">
+          <h1 class="event-title event-header-title">上海THONLY·東方露明境</h1>
+          <p>上海THONLYは2009年から国内初の東方テーマ活動であります。</p>
+          <p>2019年第十回上海THONLYもこれまで国内で最大規模の東方をテーマにしたライブです。</p>
+          <p>魅知幻想博覧会2023·星虹澄空と同時期に開催されて、</p>
+          <p>国内東方同人音楽ファンたちに4年ぶりの最高のライブ体験を捧げます。</p>
+        </div>
+      </div>
+
+      <div class="ch event-preview event-shanghai ">
+        <div class="container event-item">
+          <div class="main-content">
+            <div class="event-title-box">
+              <h1 class="position">ライブ</h1>
+              <div class="event-title">第十一届上海THONLY·東方露明境</div>
+              <div class="event-subtitle-box">
+                <div class="event-subtitle">· 上海万代南夢宮文化芸術センター<br />· 2023年8月20日 15:00～21:0</div>
+                <div class="event-subtitle event-subtitle-divider">まだチケットの販売は開始されていません</div>
+              </div>
+            </div>
+            <div class="links"> 
+              <a class="item" href="http://shthonly.org/" target="_blank">
+                <i class="icon icon-link"></i>
+                公式サイト
+              </a>
+              <a class="item" href="https://j.map.baidu.com/75/Jxd" target="_blank"><i
+                  class="icon icon-position"></i><span>会場情報</span></a> 
+                  <!--
+              <a class="item" href="https://item.taobao.com/item.htm?id=649459554099" target="_self"><i
+                  class="icon icon-ticket"></i><span>淘宝购票</span></a>
+              -->
+            </div>
+          </div>
+          <div class="map" id="map-shanghai"></div>
+        </div>
+        <!--
+        <div class="container music-booth">
+          <div class="music-booth-list clear">
+            <div class="item">
+              <img src="./image/circles/LIAN_09.jpg">
+              <p>东方LiveParty</p>
+            </div>
+            <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团1024</p>
+            </div>
+            <div class="item">
+              <img src="./image/circles/LIAN_07.jpg">
+              <p>这个社团的名字非常长，长到根本显示不下</p>
+            </div>
+             <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团社团社团</p>
+            </div>
+            <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团社团社团</p>
+            </div>
+            <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团社团社团</p>
+            </div>
+             <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团社团社团</p>
+            </div>
+            <div class="item">
+              <img src="./image/circles/LIAN_08.jpg">
+              <p>社团社团社团</p>
+            </div>
+
+          </div>
+        </div>
+              -->
+
+      </div>
+        
+      </div>
+
+      <div class="container desc">
+        <p>* イベントは魅知幻想歌谣会、东方LivePartyが技术協力を提供します</p>
+      </div>
+      <script type="text/javascript"
+        src="https://api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57"></script>
+      <script>function initMap(element, pointlat, pointlng) {
+          var map = new BMap.Map(element);
+          var point = new BMap.Point(pointlat, pointlng);
+          map.centerAndZoom(point, 15);
+          var marker = new BMap.Marker(point);
+          map.addOverlay(marker)
+        }
+        window.onload = function () {
+          initMap('map-shanghai', 121.446311, 31.255249)
+        }
+        setPersonImg('./image/b/xiangzi.png');</script>
+    </div>
+  </div>
+</body>
+
+</html>

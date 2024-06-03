@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link rel="stylesheet" href="./style/common.css" />
+	<link rel="stylesheet" href="./image/icon/iconfont.css?v=20200609" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>サークル 募集 - 魅知幻想博覧会2023上海場·星虹澄空</title>
+</head>
+
+<body>
+	<div class="mobile-header">
+		<div class="logo"><img src="./image/logo2.png" /></div><a class="right mobile-header-menu" href="javascript:;"><i
+				class="icon icon-menu"></i>メニュー</a>
+	</div>
+	<div class="sidebar">
+		<div class="background"><img class="person" id="person-img" src="#" /></div>
+		<div class="content">
+			<div class="logo"><img src="./image/logo2.png" /></div>
+			<div class="nav"><a href="index.html">トップページ</a><a href="intro.html">イベント内容</a><a href="https://shthonly.org/">上海THONLY·東方露明境</a><a
+					href="ticket.html">チケット販売</a><a href="notice.html">参加者へ</a><a class="active" href="apply-booth.html">サークル 募集</a><a
+					href="apply-custom.html">特別出展申し込み</a><a href="about.html">展示会について</a><a href="../">中国語ページへ</a></div>
+		</div>
+	</div>
+	<script src="./script/zepto.js"></script>
+	<script src="./script/common.js"></script>
+  <script>
+    $(function(){
+      $('.tab-page-header-item').click(function () {
+        var _this = $(this);
+        var name = _this.attr('data-item');
+        var box = _this.closest('.tab-page-box');
+        $(box).find('.tab-page-header-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        $(box).find('.tab-page-content-item').each(function() {
+          $(this).removeClass('enabled')
+        });
+        _this.addClass('enabled');
+        $('.tab-page-content-item[data-item='+name+']').each(function() {
+          $(this).addClass('enabled');
+        })
+      })
+      $('.tab-page-box').each(function(){
+        _this = $(this);
+        _this.find('.tab-page-header-item').first().click();
+      })
+    })
+  </script>
+	<div class="main">
+		<script>setPersonImg('./image/b/satori.png');</script>
+		<div class="page-staff page-content">
+			<div class="page-title">
+				<h1>サークル 募集</h1>
+			</div>
+      <div class="ch enter">
+      <div class="container content">
+			<div class="out-link">
+				
+				<div class="ch container article">
+					<h2>サークル・企業の申し込みと広告掲載について</h2>
+					<div class="line"><a class="button" href="./downloads/meizhi-manual-2023.pdf">サークル・企業の申し込みと広告掲載の説明書ダウンロード</a>
+					</div>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>1. サークル出展応募</h2>
+					<p>本エリアは <b>同人サークル</b>、<b>活動組織委員会</b>、<b>ボードゲームサークル</b> 3つのタイプのブースの申し込みが受ける。</p>
+					<p>東方同人サークルの方々、作者の皆さん、活動主催の方の応募を歓迎します：</p>
+					<p><a class="button" href="./apply-staff-form.html" target="_blank">上海場の申し込み</a></p>
+					<p>申込締切：2023年7月31日</p>
+					<p><b>【注意事項】</b><br>
+						<b>詳細の情報はサークル・企業の申し込みと広告掲載の中にあります、ダウンロードお願いいたします。</b><br>
+						詳細の情報があり、ぜひダウンロードしてお読みください！</p>
+					<p>疑問があれば、メール <b>circle@thonly.name</b>によってご連絡してください。</p>
+	
+					<p><b>同人サークル</b></p>
+					<p>
+					<ul>
+						<li>少なくとも1種以上の自作作品を有するサークルの申し込みが受ける（個人作者は自分のサークルを作って申し込むことができる）。</li>
+						<li>他人を代理したり、海外サークルの出展を導入したりすることを主な出展内容とする場合は、被代理・導入サークルの名義でブースを申請しなければならない。</li>
+						<li>各サークルは最大４つのブースを申請し、ブースごとに200元かかり、2枚のサークルチケットが含む。各サークルは2枚のサークルチケットを補充することができ、費用は180元になり。</li>
+						<li>出展サークルは<b>本会で発開催される非代理高創作性作品があれば、1つブースの料金を減免することができる</b>，具体的には申请表を参照。</li>
+						<li>各サークルは2つ以上のブースを申請するには、作品の数は3種類以上、又は貨物の数は1つのブースの容積よりも大きい必要がある（連絡して確認することができる）。</li>
+						<li>別のブースと隣り合う必要がある場合は申し込み時の【连摊需求】に自分で記入する。</li>
+					</ul>
+					</p>
+					<p><b>活動組織委員会</b></p>
+					<ul>
+						<li>2020年から2023年中開催されたことがあるか、2023年中開催されることを公表したイベント組織委員会からの申請のみを受け付ける。</li>
+						<li>各組織委員会は最大2つのブースを申請し、<b>最初のブースは無料で</b>（1枚のサークルチケットしか含まない）、追加するブースの費用は200元。<br>
+							2枚のサークルチケットを補充することができ、費用は180元になり。注意事項：纯线上活动有规模与影响力要求，过审门槛更高。</li>
+						<li>同一都市内の複数の活動は、合理的な理由がなければ、合併申請の要求はつうかしない。</li>
+						<li>別のブースと隣り合う必要がある場合は申し込み時の【连摊需求】に自分で記入ことができ、おなじ組織委員会ブースとのみ連続することができる。</li>
+					</ul>
+					<p><b>ボードゲームサークル</b></p>
+					<ul>
+						<li>少なくとも1種以上の自作ボードゲームを有するサークルの申し込みが受ける。</li>
+						<li>各サークル每日の費用は400元で、1つブースしか申し込まない、2枚のサークルチケットが含む。2枚のサークルチケットを補充することができ、費用は180元になり。</li>
+						<li><b>1つ同人サークルエリアにある奥行きテーブルブースを含み</b>、できるだけ相応しい位置を配置する。</li>
+						<li><b>1つボードゲームサークルエリアにある1ｍ×1ｍの体験体验テーブルを含み</b>，サークルのボードゲームのみが楽しめること。</li>
+						<li>別のブースと隣り合う必要がある場合は申し込み時の【连摊需求】に自分で記入する。</li>
+						<li>より多くの同人サークルブースが必要な場合は、同じサークルの名義でブースを申請することができ、奥行きテーブルブースと繋がる。</li>
+					</ul>
+					<br>
+					<p>
+						魅知幻想博覧会2023·星虹澄空は１５０～２００の同人スペースを設営します。
+					</p>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>2. ゲーム試遊エリアの申し込み</h2>
+					<p>ゲーム試遊エリアは現場で体験版を提供し、参加者に東方同人ゲームの魅力を展示する活動である。<br>
+						本エリアはPC、Switch、PS4などの端末で試遊を提供できる。<br><br>
+						本展はサークルの場所配置と ゲームのインストール作業に協力し、現場でスタッフを配置して秩序を维持する。<br>
+						一般ブースは700元／回（全日数）、1台のテーブル、1セットのコンピューター装置、1面のKTボードと2枚のサークルチケットが含まれている。<br>
+						そして、本展はホストの提供、モニター賃貸、ポスター制作などのサービスも提供し楽に出展することができる。<br>
+						サークルがホストを持参する場合は、100元のブース費用を減免することができるが、サークルが自ら設備を調整する必要がある。<br>
+						<br>
+						魅知幻想博覧会2023·星虹澄空は３０～４０のゲームスペースを設営します。
+					</p>
+					<br>
+					<p>申し込みの方式：<br>
+						本ページ上部の説明書によってメール <b>play@thonly.name</b> までご応募ください。
+					</p>
+				</div>
+				<div class="ch container article article_mini">
+					<h2>3. 企業ブースの申し込み</h2>
+					<p>本エリアは東方projectに関わる企業の申込を受けます。展示や商品販売へようこそ。<br>
+						注意事項：企業が東方二次創作を販売するには、事前に東方Projectの著作権者の許可を取ってください。
+					</p>
+					<p>申し込みの方式：<br>
+						本ページ上部の説明書によって公式メール <b>event@meizhi.info</b> までご応募ください。
+					</p>
+				</div>
+				<div class="tab-page-box">
+				  <div class="tab-page-header">
+					<!-- <div class="tab-page-header-item tab-page-header-item-blue" data-item="booth-beijing">北京场</div> -->
+					<!-- <div class="tab-page-header-item" data-item="booth-shanghai">2023·星虹澄空</div> -->
+				  </div>
+				  <div class="tab-page-content">
+						<div class="tab-page-content-item" data-item="booth-shanghai">
+						</div>
+						<!-- 
+							<div class="tab-page-content-item" data-item="booth-beijing">
+								<div class="ch container article article_mini">
+									<h2>1. 同人社团区参展申请</h2>
+									<p>欢迎各位东方同人社团、作者报名参展。</p>
+									<p>同人社团参展申请方式：<b>同人社团参展申请</b>
+									<br />	
+									<b>已延期，请等待后续消息</b>
+									<p><a class="button button-blue" href="#" target="_blank">点击申请北京场</a></p>
+									<p>截止日期：2021年9月17日24:00</p>
+									<p><b>【申请须知】</b><br>
+									<b>详细规则请您点击申请北京场进行浏览</b></p>
+									<ul>
+										<li>每个社团最多申请3个展位。</li>
+										<li>每摊每日摊位费200元/天，半摊100元/天。</li>
+										<li>每个社团要申请2个或以上摊位，需要作品数量大于3种或搬入数量大于1个摊位正常容量（可与我们联系）。</li>
+										<li>连摊需求可在申摊时的【备注】中自行填写。</li>
+										<li>有任何疑问，请您致信 <b>circle@thonly.name</b> 进行咨询。</li>
+									</ul>
+									<br>
+									<p>
+									魅知幻想博览会2021北京场将设置50～60个同人展位。
+									</p>
+								</div>
+								<div class="ch container article article_mini">
+									<h2>2. 企业区参展申请</h2>
+									<p>本区域接受东方相关的企业申请参展。欢迎进行展示或商品销售。<br>
+										注意：如果您需要销售东方相关商品，请务必事先取得东方Project版权方的商业授权。
+									</p>
+									<p>申请方式：<br>
+										参照页面顶部的说明书，发送申请至 <b>event@meizhi.info</b> 进行申请。
+									</p>
+								</div>
+							</div>
+							 -->
+					
+				  </div>
+				</div>
+			  </div>
+      </div>
+    </div>
+
+		</div>
+	</div>
+</body>
+
+</html>

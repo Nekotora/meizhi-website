@@ -1,0 +1,339 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* Reset
+*********************************************************************/
+
+html, body, div, span, applet, object, iframe, strong, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	list-style: none;
+	color:#fff;
+}
+
+	a:link { color: #bbe; }
+	a:visited { color: #bbe; }
+	a:hover { color: #f00; }
+	a:active { color: #bbe; }
+
+header, footer, nav, article, section, aside {
+	display: block;
+}
+
+/* header
+*********************************************************************/
+body{
+	font-family:"微软雅黑", "宋体", sans-serif;
+	background-image:url(image/bg1.png);
+	background-repeat: repeat;
+	background-position: center;
+}
+
+header{
+	width:100%;
+}
+
+header #circle{	/*最上部の黒帯 */
+	width:100%;
+	background-color:#333;
+	padding:5px;
+	box-sizing:border-box;
+}
+
+header #visual{	/*メインビジュアル */
+	width:1000px;
+	margin:0px auto;
+}
+
+
+/* コンテンツ バー色　h2　#a00;赤　#00a;青
+
+
+*********************************************************************/
+article{
+	width:100%;
+}
+
+section{
+	width:1000px;
+	margin:0px auto;
+	
+}
+
+section p{
+	font-size:120%;
+	line-height:160%;
+	margin:0px 0px 2em; 0px;
+}
+
+section #social{
+	width:1000px;
+	margin:0px auto 2em 0px;
+	text-align:center;
+}
+
+h1{/*最上部*/
+	color: #fff;
+}
+
+h2{/*　大見出し　ここの色を変える　*/
+	width:1000px;
+	box-sizing:border-box;
+	font-size:140%;
+	margin:5px 0px 10px 0px;
+	padding: .5em .75em;
+	/*　background-color:#E4A972;　*/
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(215,192,11,1) 0%, rgba(254,255,203,1) 40%, rgba(254,255,203,1) 60%, rgba(215,192,11,1) 100%);	
+	color: #000;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+h3{/*小見出し*/
+	width:100%;
+	padding:8px 0px 8px;
+	border-bottom:1px solid #ccc;
+	margin:5px 0px 10px 0px;
+}
+
+section #jacket{
+	display:inline-block;
+	width:500px;
+	margin-bottom:2em;
+}
+
+section #jacket img{
+	width:500px;
+}
+
+section #omake{
+	width:500px;
+}
+
+section #info{
+	display:inline-block;
+	width:490px;
+	padding-left:10px;
+	box-sizing:border-box;
+	vertical-align:top;
+}
+
+section #info dl{
+	width:100%;
+	font-size:120%;
+	overflow:hidden;
+	margin-bottom:2em;
+}
+
+section #info dl dt{
+	width:30%;
+	float:left;
+	padding:8px 0px;
+	font-weight:bold;
+}
+
+section #info dl dd{
+	width:70%;
+	float:left;
+	padding:8px 0px;
+	border-bottom:1px solid #888;
+}
+
+dl#track{
+	width:100%;
+	margin-bottom:2em;
+	overflow:hidden;
+}
+
+dl#track dt{
+	width:100%;
+	float:left;
+	padding-top:8px;
+	font-size:140%;
+	font-weight:bold;
+	border-bottom:1px solid #888;
+}
+
+dl#track dt .credit{
+	font-size:75%;
+	font-weight:normal;
+}
+
+dl#track dd{
+	width:31%;
+	height:60px;
+	float:left;
+	padding-top:28px;
+	border-bottom:1px solid #017;
+}
+
+@media all and (-ms-high-contrast:none){
+	dl#track dd{
+		padding-top:0px;
+	}
+}
+
+
+section #cfdemo{
+	width:100%;
+	margin-bottom:2em;
+}
+
+section ul{
+	width:100%;
+	margin-bottom:2em;
+}
+
+section ul li{
+	margin-left:30px;
+	font-size:120%;
+	line-height:160%;
+	list-style-type:disc;
+}
+
+section #cheer{
+	width:100%;
+	margin-bottom:2em;
+	overflow:hidden;
+}
+
+section #cheer .link{
+	width:238px;
+	display:inline-block;
+	padding:10px;
+	margin:0px 10px 10px 0px;
+	box-sizing:border-box;
+	text-align:center;
+	border:1px solid #ccc;
+	vertical-align:top;
+}
+
+section #cheer .link:nth-child(4n){
+	margin:0px 0px 10px 0px;
+	
+}
+
+a:hover img{
+	opacity:0.8;
+}
+
+/* footer
+*********************************************************************/
+footer{
+	width:100%;
+	background-color:#333;
+	padding:15px 0px;
+}
+
+footer small{
+	display:block;
+	width:1000px;
+	margin:0px auto;
+	padding:5px;
+	box-sizing:border-box;
+	text-align:right;
+	font-size:90%;
+	color:#fff;
+}
+
+footer p{
+	width:1000px;
+	margin:0px auto;
+	color:#fff;
+	text-align:right;
+
+}
+
+footer p a:link{
+	color:#fff;
+}
+
+footer p a:visited{
+	color:#fff;
+}
+
+footer p a:hover{
+	color:#ccc;
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+
+/*media Queries スマホ用
+----------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+	header #visual,
+	header #visual img{
+		width:100%;
+	}
+
+	header #circle{
+		width:100%;
+		padding:8px 0px 8px 0px;
+	}
+
+	section, section #social, section #info,  section #jacket, section #jacket img, section #jacket img, section .big-bnr, h2, footer p, footer small{
+		width:100%;
+	}
+
+	dl#track dt{
+		width:100%;
+		border:0px;
+	}
+
+	dl#track dd{
+		width:100%;
+		padding-top:10px;
+	}
+
+	section #info dl dt{
+		width:100%;
+	}
+
+	section #info dl dd{
+		width:100%;
+		border:0px;
+		margin-bottom:15px;
+	}
+
+	section #cheer .link{
+		width:48%;
+	}
+
+	section #cheer .link img{
+		width:90%;
+	}
+
+	section #cheer .link:nth-child(2n){
+		margin:0px 0px 10px 0px;
+	}
+
+	section #cfdemo{
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 30px;
+		height: 0;
+		overflow: hidden;
+	}
+
+	section #cfdemo iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+}
+/*-- ここまで --*/
