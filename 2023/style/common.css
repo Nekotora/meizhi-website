@@ -175,6 +175,43 @@ a:hover{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+
+.sidebar .content .nav .bottom{
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 20px 40px;
+  margin-top: 30px;
+  text-align: right;
+  font-size: 12px;
+  line-height: 3;
+}
+
+.sidebar .content .nav .bottom span{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar .content .nav .bottom .list{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.sidebar .content .nav .bottom a {
+  display: inline-block;
+  line-height: inherit;
+  height: auto;
+  padding: 0;
+  padding-left: 5px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.sidebar .content .nav .bottom a:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+
 .main {
   margin-left: 30%;
   position: relative;

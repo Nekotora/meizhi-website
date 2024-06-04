@@ -146,6 +146,10 @@ a:hover{
   max-width: 100%;
 }
 
+.sidebar .content .nav {
+  padding-top: 20px;
+}
+
 .sidebar .content .nav a {
   display: block;
   text-decoration: none;
@@ -176,18 +180,38 @@ a:hover{
 
 .sidebar .content .nav .bottom{
   font-size: 13px;
-  opacity: .8;
+  color: rgba(0, 0, 0, 0.45);
   display: inline-block;
-  padding: 0 20px;
-  margin-top: 20px;
+  padding: 20px 40px;
+  margin-top: 30px;
+  text-align: right;
+  font-size: 12px;
+  line-height: 3;
+}
+
+.sidebar .content .nav .bottom span{
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar .content .nav .bottom .list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .sidebar .content .nav .bottom a {
-  line-height: 40px;
-  height: 40px;
-  border-radius: 40px;
-  padding: 0 20px;
+  display: inline-block;
+  line-height: inherit;
+  height: auto;
+  padding: 0;
+  padding-left: 5px;
   color: rgba(0, 0, 0, 0.45);
+}
+
+.sidebar .content .nav .bottom a:hover {
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 .main {
