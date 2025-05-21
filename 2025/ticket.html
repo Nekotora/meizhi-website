@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="./style/common.css" rel="stylesheet"/>
+    <link href="./image/icon/iconfont.css?v=20200609" rel="stylesheet"/>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <title>售票信息 - 魅知幻想博览会2025上海场·星核碳酸</title>
+</head>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?37f0adb0f8955187919cb2754e8af919";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSKYP2P0TE"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-NSKYP2P0TE');
+</script>
+<body>
+<div class="mobile-header">
+    <div class="logo"><img src="./image/logo2.png"/></div>
+    <a class="right mobile-header-menu" href="javascript:;"><i
+            class="icon icon-menu"></i>菜单</a>
+</div>
+<div class="sidebar">
+    <div class="background"><img class="person" id="person-img" src="#"/></div>
+    <div class="content">
+        <div class="logo"><img src="./image/logo2.png"/></div>
+        <div class="nav">
+            <a href="index.html">首页</a>
+            <a href="intro.html">活动内容</a>
+            <!-- <a href="music.html">上海THONLY·东方露明境</a> -->
+            <a class="active" href="ticket.html">售票信息</a>
+            <a href="notice.html">参展须知</a>
+            <a href="apply-booth.html">展位招募</a>
+            <a href="apply-custom.html">特殊参展申请</a>
+            <a href="apply-staff.html">Staff招募</a>
+            <a href="about.html">关于展会</a>
+            <a href="./index-jp.html">日本語ページへ</a>
+            <div class="bottom">
+                <span>往届活动</span>
+                <div class="list">
+                    <a href="/2023/">2023：星虹澄空</a>
+                    <a href="/2021/">2021：魅知幻想</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script/zepto.js"></script>
+<script src="./script/common.js"></script>
+<script>
+    $(function () {
+        $('.tab-page-header-item').click(function () {
+            var _this = $(this);
+            var name = _this.attr('data-item');
+            var box = _this.closest('.tab-page-box');
+            $(box).find('.tab-page-header-item').each(function () {
+                $(this).removeClass('enabled')
+            });
+            $(box).find('.tab-page-content-item').each(function () {
+                $(this).removeClass('enabled')
+            });
+            _this.addClass('enabled');
+            $('.tab-page-content-item[data-item=' + name + ']').each(function () {
+                $(this).addClass('enabled');
+            })
+        })
+        $('.tab-page-box').each(function () {
+            _this = $(this);
+            _this.find('.tab-page-header-item').first().click();
+        })
+    })
+</script>
+<div class="main">
+    <script>setPersonImg('./image/b/sakuya.png');</script>
+    <div class="page-ticket">
+        <div class="page-title">
+            <h1>售票信息</h1>
+        </div>
+        <div class="container">
+            <div class="tab-page-box">
+                <div class="tab-page-header">
+                    <!-- <div class="tab-page-header-item tab-page-header-item-blue" data-item="booth-beijing">北京场</div> -->
+                    <div class="tab-page-header-item" data-item="booth-shanghai">2025星核碳酸</div>
+                </div>
+                <div class="tab-page-content">
+                    <!--
+                    <div class="tab-page-content-item" data-item="booth-beijing">
+                      <div class="ticket-block">
+                        <h2>
+                          魅知幻想博览会（北京场）
+                          <div class="ticket-divider">x</div>
+                          魅知幻想歌谣会（北京场）
+                        </h2>
+                        <p>即将开始售票：</p>
+                        <div class="out-link">
+                          <a class="button-blue" href="https://thonly.taobao.com">淘宝 魅知幻想之旅</a>
+                        </div>
+                      </div>
+
+                      <div class="ticket-block">
+
+                      </div>
+                    <div class="ticket-block">
+                      <h2>联动活动-幻奏盛宴2021北京场</h2>
+                        <p>即将开始售票：</p>
+                        <div class="out-link">
+                          <a class="button-blue" href="https://thonly.taobao.com">淘宝 魅知幻想之旅</a>
+                        </div>
+                    </div>
+                    </div>
+                    -->
+                    <div class="tab-page-content-item" data-item="booth-shanghai">
+                        <div class="ticket-block">
+                            <h2>
+                                魅知幻想博览会2025·星核碳酸
+                            </h2>
+                            <!--TODO:更新票务信息-->
+                            <p>已于2024年6月29日晚上18时准时开始早鸟预约，展会早鸟预约已经结束，请等待7月中下旬开票。
+                                <br/>更多信息请关注群：<a
+                                        href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=LncoHv4pRm9x-YVYHxCJ---QQuGO4DiB&authKey=MBzt3d8pzmzvO8cG6w%2BkxZ3gEneOob48b%2FqG2QCM59JreFiF%2BHsuxnyuS6QebWVp&noverify=0&group_code=992051946"
+                                        target="_blank">992051946</a> 或官方b站账号：<a
+                                        href="https://space.bilibili.com/12260/dynamic" target="_blank">魅知幻想之旅</a>
+                            </p>
+                            <div class="out-link">
+                                <a class="button" href="https://item.taobao.com/item.htm?id=810131436361">淘宝
+                                    幻想之旅展会演出活动</a>
+                            </div>
+                        </div>
+                        <div class="ticket-block">
+                            <!--TODO:更新票务信息-->
+                            <h2>联动活动：第十三届上海THONLY·东方琢火蝶</h2>
+                            <p>已于2024年6月29日晚上18时准时开始售票，<br/>更多信息请关注群：<a
+                                    href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Xe8MQvXLPE_xQcGvD9JcP9LitGxWBtTR&authKey=PruQaQd9JFmh0UvL%2BxLSQNdJHQm32XoJDQ8bH%2FGISWOYN9e4gYmlb3sJz6kynTBW&noverify=0&group_code=386286978"
+                                    target="_blank">386286978</a> 或官方b站账号：<a href="https://weibo.com/houhouonly"
+                                                                                   target="_blank">上海THONLY</a></p>
+                            <div class="out-link">
+                                <a class="button" href="https://item.taobao.com/item.htm?id=810131436361">淘宝
+                                    幻想之旅展会演出活动</a>
+                            </div>
+                        </div>
+                        <div class="ticket-block">
+                            <!--TODO:更新票务信息-->
+                            <h2>联动活动：幻奏盛宴·2025和音社上海场</h2>
+                            <p>于7月5日下午16点30分，多平台开票，<br/>更多信息请关注群：<a
+                                    href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=Aqz6wzqB8n0v0Gnb-oRY-S9RvvMOPicM&authKey=DscnsJPl%2FojQhfXoXtzj88m4kQqOdaVbvxnbp2fmDM%2FhGjikklCI3OFFS3%2Bdtouo&noverify=0&group_code=495118911"
+                                    target="_blank">495118911</a> 或和音社b站账号：<a
+                                    href="https://space.bilibili.com/603201051" target="_blank">和音社交响乐团</a></p>
+                            <div class="out-link">
+                                <a class="button" href="https://item.taobao.com/item.htm?id=811762582980">淘宝
+                                    幻想之旅展会演出活动</a>
+                            </div>
+                        </div>
+
+                        <!-- <div class="ticket-block">
+
+                        <a class="item" href="https://thonly.taobao.com/" target="_self"><i
+                            class="icon icon-ticket"></i><span>淘宝购票</span></a>
+                        </div> -->
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
