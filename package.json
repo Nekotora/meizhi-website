@@ -1,0 +1,28 @@
+{
+  "name": "meizhi-website",
+  "version": "1.0.0",
+  "description": "This repo contains the website code of 魅知幻想博览会、上海THONLY、东方主题交响音乐会：幻奏盛宴。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nekotora/meizhi-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nekotora/meizhi-website/issues"
+  },
+  "homepage": "https://github.com/Nekotora/meizhi-website#readme",
+  "dependencies": {
+    "@astrojs/vue": "^5.0.13",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "astro": "^5.7.13",
+    "vue": "^3.5.14"
+  }
+}
