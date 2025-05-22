@@ -1,3 +1,8 @@
+---
+import VueTest from './hello.vue';
+import Nav from './components/nav.astro';
+---
+
 <!DOCTYPE html>
 <html lang="zh">
 
@@ -5,7 +10,7 @@
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <link href="./style/common.css" rel="stylesheet"/>
+    <link href="/2025/style/common.css" rel="stylesheet"/>
     <link href="./image/icon/iconfont.css?v=20200609" rel="stylesheet"/>
     <meta content="" name="description"/>
     <meta content="" name="keywords"/>
@@ -40,34 +45,9 @@
     <a class="right mobile-header-menu" href="javascript:;"><i
             class="icon icon-menu"></i>菜单</a>
 </div>
-<div class="sidebar">
-    <div class="background"><img class="person" id="person-img" src="#"/></div>
-    <div class="content">
-        <div class="logo"><img src="./image/logo2.png"/></div>
-        <div class="nav">
-            <a class="active" href="index.html">首页</a>
-            <a href="intro.html">活动内容</a>
-            <!-- <a href="music.html">上海THONLY·东方露明境</a> -->
-            <a href="ticket.html">售票信息</a>
-            <a href="notice.html">参展须知</a>
-            <a href="apply-booth.html">展位招募</a>
-            <a href="apply-custom.html">特殊参展申请</a>
-            <a href="apply-staff.html">Staff招募</a>
-            <a href="about.html">关于展会</a>
-            <a href="./index-jp.html">日本語ページへ</a>
-            <div class="bottom">
-                <span>往届活动</span>
-                <div class="list">
-                    <a href="/2023/">2023：星虹澄空</a>
-                    <a href="/2021/">2021：魅知幻想</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<script src="./script/zepto.js"></script>
-<script src="./script/common.js"></script>
+<Nav />
+<script src="/2025/script/zepto.js" is:inline></script>
+<script src="/2025/script/common.js" is:inline></script>
 <div class="main">
     <div class="page-index">
         <div class="page-title">
