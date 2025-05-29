@@ -1,60 +1,17 @@
 ---
 import VueTest from './hello.vue';
 import Nav from './components/nav.astro';
+import Layout from './components/layout.astro';
 ---
+<Layout title="首页">
 
-<!DOCTYPE html>
-<html lang="zh">
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <link href="/2025/style/common.css" rel="stylesheet"/>
-    <link href="./image/icon/iconfont.css?v=20200609" rel="stylesheet"/>
-    <meta content="" name="description"/>
-    <meta content="" name="keywords"/>
-    <title>首页 - 魅知幻想博览会2025上海场·星核碳酸 × 上海THONLY</title>
-</head>
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?37f0adb0f8955187919cb2754e8af919";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSKYP2P0TE"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-NSKYP2P0TE');
-</script>
-<body>
-<div class="mobile-header">
-    <div class="logo"><img src="./image/logo2.png"/></div>
-    <a class="right mobile-header-menu" href="javascript:;"><i
-            class="icon icon-menu"></i>菜单</a>
-</div>
-<Nav />
-<script src="/2025/script/zepto.js" is:inline></script>
-<script src="/2025/script/common.js" is:inline></script>
 <div class="main">
     <div class="page-index">
         <div class="page-title">
             <h1>关于活动</h1>
         </div>
         <div class="ch meta intro">
-            <div class="intro-post" style="background-image: url(./image/intro-post.jpg);"></div>
+            <div class="intro-post" style="background-image: url(/2025/image/intro-post.jpg);"></div>
             <div class="container desc">
                 <h2 class="event-title">魅知幻想博览会2025</h2>
                 <h1 class="event-title">星核碳酸</h1>
@@ -68,7 +25,7 @@ import Nav from './components/nav.astro';
                 <div class="main-content">
 
                     <div class="event-title-box">
-                        <div class="event-title">魅知幻想博览会2025·星核碳酸<br>×<br></i>上海THONLY</div>
+                        <div class="event-title">魅知幻想博览会2025·星核碳酸<br>×<br>上海THONLY</div>
                         <div class="event-subtitle-box">
                             <div class="event-subtitle">大型东方主题展会</div>
                             <div class="event-subtitle">· 上海市浦东新区陆家嘴西路168号正大广场<br/>· 2025年8月9日
@@ -184,9 +141,9 @@ import Nav from './components/nav.astro';
         </div>
 
 
-        <script src="https://api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57"
-                type="text/javascript"></script>
-        <script>function initMap(element, pointlat, pointlng) {
+        <script src="https://api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57" type="text/javascript"/>
+        <script type="text/javascript">
+            function initMap(element, pointlat, pointlng) {
             var map = new BMap.Map(element);
             var point = new BMap.Point(pointlat, pointlng);
             map.centerAndZoom(point, 14);
@@ -199,9 +156,7 @@ import Nav from './components/nav.astro';
             initMap('map-live', 121.471705, 31.167799)
             initMap('map-huanzou', 121.449387, 31.232819)
         }
-        setPersonImg('./image/b/reimu.png');</script>
+            setPersonImg('/2025/image/b/reimu.png');</script>
     </div>
 </div>
-</body>
-
-</html>
+</Layout>

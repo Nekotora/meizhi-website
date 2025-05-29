@@ -1,72 +1,7 @@
-<!DOCTYPE html>
-<html lang="zh">
-<!--TODO:待翻译-->
-<head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <link href="/2025/style/common.css" rel="stylesheet"/>
-    <link href="./image/icon/iconfont.css?v=20200609" rel="stylesheet"/>
-    <meta content="" name="description"/>
-    <meta content="" name="keywords"/>
-    <title>首页 - 魅知幻想博覧会2024上海場·星虹澄空 × 上海THONLY</title>
-</head>
-<script>
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?37f0adb0f8955187919cb2754e8af919";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NSKYP2P0TE"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-NSKYP2P0TE');
-</script>
-<body>
-<div class="mobile-header">
-    <div class="logo"><img src="./image/logo2.png"/></div>
-    <a class="right mobile-header-menu" href="javascript:;"><i
-            class="icon icon-menu"></i>メニュー</a>
-</div>
-<div class="sidebar">
-    <div class="background"><img class="person" id="person-img" src="#"/></div>
-    <div class="content">
-        <div class="logo"><img src="./image/logo2.png"/></div>
-        <div class="nav">
-            <a href="index.html">首页</a>
-            <a href="intro.html">活动内容</a>
-            <!-- <a href="music.html">上海THONLY·东方露明境</a> -->
-            <a href="ticket.html">售票信息</a>
-            <a href="notice.html">参展须知</a>
-            <a href="apply-booth.html">展位招募</a>
-            <a href="apply-custom.html">特殊参展申请</a>
-            <a href="apply-staff.html">Staff招募</a>
-            <a href="about.html">关于展会</a>
-            <a class="active" href="./index-jp.html">日本語ページへ</a>
-            <div class="bottom">
-                <span>往届活动</span>
-                <div class="list">
-                    <a href="/2023/">2023：星虹澄空</a>
-                    <a href="/2021/">2021：魅知幻想</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<script src="/2025/script/zepto.js" is:inline></script>
-<script src="/2025/script/common.js" is:inline></script>
+---
+import Layout from './components/layout.astro';
+---
+<Layout title="首页">
 <div class="main">
     <div class="page-index">
         <div class="page-title">
@@ -214,6 +149,4 @@
         setPersonImg('./image/b/reimu.png');</script>
     </div>
 </div>
-</body>
-
-</html>
+        </Layout>
