@@ -1,6 +1,6 @@
 ---
 import Nav from "./nav.astro";
-const {title} = Astro.props;
+const {title, sideBg} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -42,12 +42,8 @@ const {title} = Astro.props;
 </script>
 <body>
 
-<div class="mobile-header">
-    <div class="logo"><img src="/2025/image/logo2.png"/></div>
-    <a class="right mobile-header-menu" href="javascript:;"><i
-            class="icon icon-menu"></i>菜单</a>
-</div>
-<Nav/>
+
+<Nav sideBg={sideBg}/>
 <script src="/2025/script/zepto.js" is:inline/>
 <script src="/2025/script/common.js" is:inline/>
 
