@@ -5,7 +5,7 @@ import vue from '@astrojs/vue';
 export default defineConfig({
   integrations: [vue()],
   build: {
-    format: 'file',
+    format: 'preserve',
     assets: '_meizhi'
   }
 });
