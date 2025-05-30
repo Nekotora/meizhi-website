@@ -52,7 +52,7 @@ import Layout from './components/layout.astro';
             </div>
         </div>
         <script src="/2025/script/vue.min.js"/>
-        <script>
+        <script is:inline>
             var v = new Vue({
                 el: '#app',
                 data: {
@@ -272,7 +272,7 @@ import Layout from './components/layout.astro';
                 }]
             }];
         </script>
-        <script>setPersonImg('./image/b/marisa.png');</script>
+        <script is:inline>setPersonImg('./image/b/marisa.png');</script>
     </div>
 </div>
 </Layout>

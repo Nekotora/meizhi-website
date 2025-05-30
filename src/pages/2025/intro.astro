@@ -2,7 +2,7 @@
 import Layout from './components/layout.astro';
 ---
 <Layout title="活动内容">
-<script>
+<script is:inline>
     $(function () {
         $('.tab-page-header-item').click(function () {
             var _this = $(this);
@@ -234,6 +234,6 @@ import Layout from './components/layout.astro';
             </div>
         </div>
     </div>
-    <script>setPersonImg('./image/b/marisa.png');</script>
+    <script is:inline>setPersonImg('./image/b/marisa.png');</script>
 </div>
 </Layout>

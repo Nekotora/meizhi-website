@@ -133,7 +133,7 @@ import Layout from './components/layout.astro';
 
         <script src="https://api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57"
                 type="text/javascript"></script>
-        <script>function initMap(element, pointlat, pointlng) {
+        <script is:inline>function initMap(element, pointlat, pointlng) {
             var map = new BMap.Map(element);
             var point = new BMap.Point(pointlat, pointlng);
             map.centerAndZoom(point, 14);
