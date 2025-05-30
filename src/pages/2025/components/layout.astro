@@ -1,6 +1,7 @@
 ---
 import Nav from "./nav.astro";
 const {title, sideBg} = Astro.props;
+
 ---
 
 <!DOCTYPE html>
@@ -12,8 +13,22 @@ const {title, sideBg} = Astro.props;
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <link href="/2025/style/common.css" rel="stylesheet"/>
     <link href="/2025/image/icon/iconfont.css?v=20200609" rel="stylesheet"/>
-    <meta content="" name="description"/>
-    <meta content="" name="keywords"/>
+
+    <meta name="description"
+          content="魅知幻想博览会系列活动是中国的东方Project主题同人活动，集结同人创作、周边贩售、音乐演出等东方Project同人内容。">
+    <meta name="keywords"
+          content="魅知幻想博览会, 东方Project同人展, 东方Only, 上海同人展, 东方Project展会, thonly, touhou only, 博丽神社例大祭, 同人志即卖会, touhou">
+    <meta name="robots" content="index">
+
+    <!-- Open Graph (FB/微信分享优化) -->
+    <meta property="og:title" content="【2025】魅知幻想博览会 | 东方Project同人Only盛会">
+    <meta property="og:description" content="东方ProjectOnly">
+    <meta property="og:image" content="https://thonly.name/2025/image/logo2025_v1.webp">
+    <meta property="og:url" content="https://thonly.name/2025/index.html">
+    <meta property="og:type" content="website">
+
+
+    <meta name="apple-mobile-web-app-title" content="魅知幻想博览会">
     <title>{title} - 魅知幻想博览会2025上海场·星核碳酸 × 上海THONLY</title>
 </head>
 
@@ -43,7 +58,7 @@ const {title, sideBg} = Astro.props;
 <body>
 
 
-<Nav sideBg={sideBg}/>
+<Nav showBg={false} sideBg={sideBg}/>
 <script src="/2025/script/zepto.js" is:inline/>
 <script src="/2025/script/common.js" is:inline/>
 

@@ -1,0 +1,59 @@
+---
+import {hidden as h} from "../../../../public/2025/script/tools.js";
+
+interface linksData {
+    ticket: {
+        isShow: boolean,
+        href: string,
+        target: string
+    },
+    map: {
+        isShow: boolean,
+        href: string,
+        target: string
+    },
+    website: {
+        isShow: boolean,
+        href: string,
+        target: string
+    }
+}
+const link_data: linksData = Astro.props.link_data ?? {
+    ticket: {
+        isShow: true,
+        href: '#',
+        target: '_self'
+    },
+    map: {
+        isShow: true,
+        href: '#',
+        target: '_self'
+    },
+    website: {
+        isShow: true,
+        href: '#',
+        target: '_self'
+    }
+}
+---
+<div class="links">
+    <!--TODO:更新票务等链接--><!---->
+    <div style={h(link_data.ticket.isShow)}>
+        <a class="item" href={link_data.ticket.href} target={link_data.ticket.target}>
+            <i class="icon icon-ticket"/>售票信息
+        </a>
+    </div>
+
+    <div>
+        <a style={h(link_data.map.isShow)} class="item" href={link_data.map.href} target={link_data.map.target}>
+            <i class="icon icon-position"/>地图导航
+        </a>
+    </div>
+
+    <div>
+        <a style={h(link_data.website.isShow)} class="item" href={link_data.website.href}
+           target={link_data.website.target}>
+            <i class="icon icon-link"/>详细信息
+        </a>
+    </div>
+</div>

@@ -478,19 +478,6 @@ a:hover{
   text-align: right;
 }
 
-.event-preview .links .item {
-  display: inline-block;
-  text-decoration: none;
-  height: 30px;
-  line-height: 30px;
-  color: initial;
-  background-color: #faf2ee;
-  padding: 6px 16px;
-  border-radius: 6px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
 .event-preview .links .item i {
   position: relative;
   font-size: 22px;

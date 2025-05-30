@@ -1,5 +1,6 @@
 ---
 import Layout from './components/layout.astro';
+import Link_group from "./components/link_group.astro";
 ---
 <Layout title="首页" sideBg="/2025/image/b/reimu.png">
 
@@ -13,8 +14,12 @@ import Layout from './components/layout.astro';
             <div class="container desc">
                 <h2 class="event-title">魅知幻想博览会2025</h2>
                 <h1 class="event-title">星核碳酸</h1>
+                <div style="text-align: center">
                 <!--TODO:更新介绍-->
-                <p>写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的</p>
+                    <br/><br/>
+                    <h1 style="padding-left: 1.4em">"早上好，第三新幻想乡！"</h1><br/>
+                    <!--<p>写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的写新的</p>-->
+                </div>
             </div>
         </div>
 
@@ -34,20 +39,26 @@ import Layout from './components/layout.astro';
                                     target="_blank"><b>992051946</b></a></div>
                         </div>
                     </div>
-
-                    <div class="links">
-                        <!--TODO:更新票务等链接-->
-                        <a class="item" href="./ticket.html" target="_self">
-                            <i class="icon icon-ticket"></i>
-                            售票信息
-                        </a>
-                        <a class="item" href="https://j.map.baidu.com/6a/WTJ" target="_blank">
-                            <i class="icon icon-position"></i>地图导航
-                        </a>
-                    </div>
-
+                    <Link_group link_data={
+                        {
+                            ticket: {
+                                isShow: true,
+                                href: './ticket.html',
+                                target: '_self'
+                            },
+                            map: {
+                                isShow: false,
+                                href: 'https://j.map.baidu.com/6a/WTJ',
+                                target: '_blank'
+                            },
+                            website: {
+                                isShow: true,
+                                href: '#',
+                                target: '_self'
+                            }
+                        }
+                    }/>
                 </div>
-
                 <div class="map-box">
                     <div class="map" id="map-event"></div>
                     <h1 class="position">展会</h1>
@@ -55,7 +66,7 @@ import Layout from './components/layout.astro';
             </div>
         </div>
 
-        <div class="ch event-preview event-other">
+        <!--<div class="ch event-preview event-other">
             <div class="container event-item">
                 <div class="main-content">
 
@@ -71,9 +82,25 @@ import Layout from './components/layout.astro';
                                     target="_blank"><b>386286978</b></a></div>
                         </div>
                     </div>
+                    <Link_group link_data={
+                        {
+                            ticket:{
+                                isShow:false,
+                                href:'#'
+                            },
+                            map:{
+                                isShow:true,
+                                href:'#'
+                            },
+                            website:{
+                                isShow:true,
+                                href:'#'
+                            }
+                        }
+                    }/>
 
-                    <div class="links">
-                        <!--TODO:更新票务等链接-->
+                    &lt;!&ndash;<div class="links">
+                        &lt;!&ndash;TODO:更新票务等链接&ndash;&gt;
                         <a class="item" href="./ticket.html" target="_self">
                             <i class="icon icon-ticket"></i>
                             售票信息
@@ -85,7 +112,7 @@ import Layout from './components/layout.astro';
                             <i class="icon icon-link"></i>
                             活动网站
                         </a>
-                    </div>
+                    </div>&ndash;&gt;
 
                 </div>
 
@@ -94,7 +121,7 @@ import Layout from './components/layout.astro';
                     <h1 class="position">Live</h1>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <div class="ch event-preview event-other">
             <div class="container event-item">
@@ -115,18 +142,37 @@ import Layout from './components/layout.astro';
 
                     <div class="links">
                         <!--TODO:更新票务等链接-->
+                        <Link_group link_data={
+                            {
+                                ticket: {
+                                    isShow: true,
+                                    href: './ticket.html',
+                                    target: '_self'
+                                },
+                                map: {
+                                    isShow: false,
+                                    href: 'https://j.map.baidu.com/51/cif',
+                                    target: '_blank'
+                                },
+                                website: {
+                                    isShow: true,
+                                    href: '#',
+                                    target: '_self'
+                                }
+                            }
+                        }/>
 
-                        <!-- <a class="item" href="http://touhou-symphony.net/" target="_blank">
-                          <i class="icon icon-link"></i>
-                          详细信息
-                        </a>-->
-                        <a class="item" href="./ticket.html" target="_self">
+                        <!--<a class="item" href="http://touhou-symphony.net/" target="_blank">
+                         <i class="icon icon-link"></i>
+                         详细信息
+                       </a>-->
+                        <!--<a class="item" href="./ticket.html" target="_self">
                             <i class="icon icon-ticket"></i>
                             售票信息
                         </a>
                         <a class="item" href="https://j.map.baidu.com/51/cif" target="_blank">
                             <i class="icon icon-position"></i>地图导航
-                        </a>
+                        </a>-->
                     </div>
                 </div>
 
@@ -141,19 +187,27 @@ import Layout from './components/layout.astro';
 
         <script src="https://api.map.baidu.com/api?v=2.0&ak=64665E5BCEdfb17ec826f5f890f07c57" type="text/javascript"/>
         <script type="text/javascript">
+            let mapList = [];
+
             function initMap(element, pointlat, pointlng) {
-            var map = new BMap.Map(element);
-            var point = new BMap.Point(pointlat, pointlng);
-            map.centerAndZoom(point, 14);
-            var marker = new BMap.Marker(point);
-            map.addOverlay(marker)
+                let map = new BMap.Map(element);
+                let point = new BMap.Point(pointlat, pointlng);
+                map.centerAndZoom(point, 14);
+                let marker = new BMap.Marker(point);
+                map.addOverlay(marker)
+                mapList.push(map);
         }
 
         window.onload = function () {
             initMap('map-event', 121.505934, 31.242497)
-            initMap('map-live', 121.471705, 31.167799)
+            //initMap('map-live', 121.471705, 31.167799)
             initMap('map-huanzou', 121.449387, 31.232819)
         }
+            window.onresize = function () {
+                mapList.forEach(map => {
+                    map.checkResize()
+                })
+            }
         </script>
     </div>
 </div>
