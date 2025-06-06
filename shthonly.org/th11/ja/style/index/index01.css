@@ -1,0 +1,140 @@
+@CHARSET "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	position: relative;
+	
+	width: 100vw;
+	height: 100vh;	
+	
+	min-width: 155vh;
+	min-height: 64vw;
+	max-width: 100vw;
+	max-height: 100vh;
+	
+	background-position: top;
+	background-image: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.info {
+	width: 80%;	
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#title {
+	top: 11%;
+	left: 2.8%;	
+	height: 9.5%;
+	
+	background-position: top;
+	background-image: url('./images/title.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#name {
+	top: 24.3%;
+	left: 2.75%;
+	height: 15.5%;
+	
+	background-position: top;
+	background-image: url('./images/name.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#kana {
+	top: 30%;
+	left: 2.7%;
+	height: 3.2%;	
+	
+	background-position: top;
+	background-image: url('./images/kana.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#link {
+	top: 31.6%;
+	left: 3.2%;
+	height: 7.1%;
+	
+	cursor: pointer;
+	
+	background-position: top;
+	background-image: url('./images/link2.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#logo {
+	bottom: 3%;
+	right: 5%;
+	height: 6.9%;
+	max-width: 154px;	
+	position: absolute;
+	
+	background-position: top;
+	background-image: url('./images/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#date {
+	top: 48.5%;
+	left: 2.7%;
+	height: 3.3%;
+	
+	background-position: top;
+	background-image: url('./images/date.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#location {
+	top: 50.2%;
+	left: 2.2%;
+	height: 3.5%;	
+	
+	background-position: top;
+	background-image: url('./images/location.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#event {
+	top: 53.2%;
+	left: 2.2%;
+	height: 3.5%;	
+	
+	background-position: top;
+	background-image: url('./images/event.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+
+@media screen and (orientation : portrait) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: hidden;
+	}
+}
+@media screen and (orientation : landscape) and (min-width: 156vh) {
+	body {
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	}
+}
+@media screen and (orientation : landscape) and (max-width: 156vh) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: auto;
+	}
+}

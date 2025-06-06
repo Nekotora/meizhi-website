@@ -1,0 +1,282 @@
+@CHARSET "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+	font-size: 16px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+input[type="text"] {
+	box-sizing: content-box;
+	text-align: left;
+	font-size: 16px;
+	height: 28px;
+	border-radius: 4px;
+	border: 2px solid #c8cccf;
+	color: #6a6f77;
+	-web-kit-appearance: none;
+	-moz-appearance: none;
+	display: block;
+	outline: 0;
+	padding: 0 10px;
+	text-decoration: none;
+}
+input[type="text"]:focus {
+	box-sizing: content-box;
+	border: 2px solid #6495ED;
+}
+
+#container {
+	position: relative;
+	
+	width: 100vw;
+	height: 100vh;
+	
+	min-width: 1524px;
+	min-height: 900px;
+	max-width: 100vw;
+	max-height: 100vh;
+	
+	background-position: top;
+	background-image: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	overflow-y: hidden;	
+}
+
+#table {
+	top: 3%;
+	height: 830px;
+	width: 50%;	
+	max-width: 800px;
+	z-index: 9999;
+	position: relative;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+        
+.info_div {
+	float: left;
+	clear: both;
+	margin-bottom: 5px;
+	width: 100%;
+}
+#main_info {
+	height: 140px;
+}
+#mode_info {
+	height: 60px;
+}
+#space_info {
+	height: 130px;
+}
+#work_info {
+	height: 170px;
+}
+#other_info {
+	height: 180px;
+}
+
+.sub_div {
+	float: left;
+	clear: both;
+}
+#left_div {
+	float: left;
+	clear: left;
+	width:50%;
+}
+#right_div {
+	float: right;
+	clear: right;
+	width: 50%;	
+}
+
+.input_long {
+	float: left;
+	clear: left;
+	margin-top: 2px;	
+	margin-bottom: 16px;
+	width: 40%;	
+}
+#main_info .input_long {
+	width: 80%;
+}
+.normal_label {
+	float: left;
+	clear: both;
+}
+.radio_label {
+	float: left;
+	margin: 5px 15px 15px 5px;
+}
+.small {
+	font-size: 80%;
+}
+
+.line_div {
+	float: left;
+	clear: both;
+	width: 100%;
+}
+.line_label {
+	padding: 2px 14px 2px 8px;
+}
+.line_first.line_label {
+	padding: 2px 14px 2px 2px;
+}
+.line_first {
+	float: left;
+	clear: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 1%;
+	width: 40%;
+}
+.line_second {
+	float: left;
+	clear: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 1%;	
+	width: 15%;	
+}
+.line_third {
+	float: left;
+	clear: right;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 1%;	
+	width: 25%;	
+}
+
+#embed-captcha {
+	margin-top: 40px;
+}
+
+#textarea {
+	box-sizing: content-box;
+	text-align: left;
+	font-size: 18px;
+	border-radius: 4px;
+	border: 2px solid #c8cccf;
+	color: #6a6f77;
+	-web-kit-appearance: none;
+	-moz-appearance: none;
+	display: block;
+	float: left;
+	clear: both;
+	outline: 0;
+	padding: 10px 10px;
+	text-decoration: none;
+	resize: none;
+	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+	width: 85%;
+	height: 120px;
+}
+#textarea:focus {
+	box-sizing: content-box;
+	border: 2px solid #6495ED;
+}
+
+#text {
+	
+	background-position: top;
+	background-image: url('./images/text.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+.info {
+	width: 50%;	
+	z-index: 9999;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#link {
+	z-index: 9999;	
+	display: block;
+	top: 4.5%;
+	left: 0;
+	height: 30px;
+	
+	cursor: pointer;
+	border: none;
+	
+	background-color: transparent;
+	background-position: top;
+	background-image: url('./images/link.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+.gray {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	
+	filter: grayscale(100%);
+	filter: gray;
+}
+
+#shape_box {
+	top: 0;
+	width: 100%;
+	position: relative;
+}
+
+#shape {
+	width: 60%;	
+	max-width: 1000px;	
+	height: 5000px;
+	
+	margin:0 auto;	
+	top: 0;	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	z-index: 1;
+	position: absolute;
+	
+	opacity: 0.6;
+	background-color: white;
+}
+
+@media screen and (orientation : portrait) and (min-width: 1524px) and (min-height: 900px) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: hidden;
+	}
+}
+@media screen and (orientation : landscape) and (min-width: 159vh) {
+	body {
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	}
+}
+@media screen and (orientation : landscape) and (max-width: 159vh) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: auto;
+	}
+}

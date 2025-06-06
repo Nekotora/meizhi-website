@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#container {
+	position: relative;
+	
+	width: 100vw;
+	height: 100vh;	
+	
+	min-width: 169vh;
+	min-height: 59vw;
+	max-width: 100vw;
+	max-height: 100vh;
+	
+	background-position: top;
+	background-image: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	overflow-y: hidden;	
+}
+
+.info {
+	width: 80%;	
+	z-index: 9999;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#text {
+	top: 3%;
+	left: 0;	
+	height: 90%;
+	
+	background-position: top;
+	background-image: url('./images/text.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#link {
+	top: 5.5%;
+	left: 0;
+	height: 3%;
+	
+	cursor: pointer;
+	
+	background-position: top;
+	background-image: url('./images/link.png');
+	background-size: contain;
+	background-repeat: no-repeat;	
+}
+#shape_box {
+	top: 0;
+	width: 100%;
+	position: relative;
+}
+
+#shape {
+	width: 60%;	
+	height: 5000px;
+	
+	margin:0 auto;	
+	top: 0;	
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+	z-index: 1;
+	position: absolute;
+	
+	opacity: 0.6;
+	background-color: white;
+}
+
+@media screen and (orientation : portrait) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: hidden;
+	}
+}
+@media screen and (orientation : landscape) and (min-width: 156vh) {
+	body {
+	    overflow-x: hidden;
+	    overflow-y: auto;
+	}
+}
+@media screen and (orientation : landscape) and (max-width: 156vh) {
+	body {
+	    overflow-x: auto;
+	    overflow-y: auto;
+	}
+}

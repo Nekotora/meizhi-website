@@ -66,7 +66,7 @@ import Link_group from "./components/link_group.astro";
             </div>
         </div>
 
-        <!--<div class="ch event-preview event-other">
+        <div class="ch event-preview event-other">
             <div class="container event-item">
                 <div class="main-content">
 
@@ -85,22 +85,23 @@ import Link_group from "./components/link_group.astro";
                     <Link_group link_data={
                         {
                             ticket:{
-                                isShow:false,
+                                isShow:true,
                                 href:'#'
                             },
                             map:{
-                                isShow:true,
-                                href:'#'
+                                isShow:false,
+                                href:'https://j.map.baidu.com/52/X0Mk',
+                                target:'_blank'
                             },
                             website:{
-                                isShow:true,
-                                href:'#'
+                                isShow:false,
+                                href:'https://shthonly.org/th13/zh/',
+                                target:'_blank'
                             }
                         }
                     }/>
 
-                    &lt;!&ndash;<div class="links">
-                        &lt;!&ndash;TODO:更新票务等链接&ndash;&gt;
+                    <!-- &lt;!&ndash;<div class="links">
                         <a class="item" href="./ticket.html" target="_self">
                             <i class="icon icon-ticket"></i>
                             售票信息
@@ -112,7 +113,7 @@ import Link_group from "./components/link_group.astro";
                             <i class="icon icon-link"></i>
                             活动网站
                         </a>
-                    </div>&ndash;&gt;
+                    </div>&ndash;&gt; -->
 
                 </div>
 
@@ -121,7 +122,7 @@ import Link_group from "./components/link_group.astro";
                     <h1 class="position">Live</h1>
                 </div>
             </div>
-        </div>-->
+        </div> 
 
         <div class="ch event-preview event-other">
             <div class="container event-item">
@@ -200,7 +201,7 @@ import Link_group from "./components/link_group.astro";
 
         window.onload = function () {
             initMap('map-event', 121.505934, 31.242497)
-            //initMap('map-live', 121.471705, 31.167799)
+            initMap('map-live', 121.471705, 31.167799)
             initMap('map-huanzou', 121.449387, 31.232819)
         }
             window.onresize = function () {

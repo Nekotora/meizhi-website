@@ -1,0 +1,88 @@
+<manifest alg="2" build="2017.0.2.363" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="index.html" resolutions="1x" timestamp="1497201571334">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="index.css" crc="3791893187" ref="index"/>
+    <file name="clist.css" crc="188904608" ref="clist"/>
+  </folder>
+  <folder name="assets">
+    <file name="poster.jpg" crc="261249700" seo="true" mt="1492265711000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:clist"/>
+    <file name="museutils.js" crc="4232573551" ref="index:clist"/>
+    <file name="whatinput.js" crc="86476730" ref="index:clist"/>
+    <file name="museconfig.js" crc="4152223963" ref="index:clist"/>
+    <file name="jquery.watch.js" crc="3844535323" ref="index"/>
+    <file name="require.js" crc="4234670167" ref="index:clist"/>
+  </folder>
+  <folder name="images">
+    <file name="th08-bgc.jpg" crc="339181330" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="finish" alt=""/>
+      <caption webpage="mail" alt=""/>
+      <caption webpage="circle" alt=""/>
+    </file>
+    <file name="english.png" crc="4223156305" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="logo.png" crc="4285894325" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="time.png" crc="1980741" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="th08.png" crc="3782592253" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="name.png" crc="315306475" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="ja.png" crc="349352246" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="c_title.png" crc="381005572" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_hani.png" crc="3963068858" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_crest.png" crc="136520304" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_yv.png" crc="368584419" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_sanae.png" crc="15072671" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="clist.png" crc="165995604" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="c_gitr.png" crc="4040266147" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_tmnc.png" crc="179412557" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_echo.png" crc="531911340" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_aone.png" crc="3983068355" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_tbk.png" crc="3791003994" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_br.png" crc="4036365172" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_kgr.png" crc="3973143631" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+    <file name="c_end.png" crc="497961752" seo="true" ref="clist">
+      <caption webpage="clist" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="3830546277" seo="true" mt="1497201312889" redirect="true"/>
+  <file name="clist.html" crc="4187542893" seo="true" mt="1496485161259" redirect="true"/>
+</manifest>

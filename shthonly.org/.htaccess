@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_REFERER} !^https://1999only.net/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://1999only.net$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://hz.1999only.net/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://hz.1999only.net$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://sh.1999only.net/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://sh.1999only.net$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://shthonly.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://shthonly.org$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://thonly.name/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://thonly.name$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dl.ryusei-project.org/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://dl.ryusei-project.org$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://touhou.click/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://touhou.click$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
