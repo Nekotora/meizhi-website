@@ -10,6 +10,7 @@
 <body>
   <div class="main">
     <div class="cover">
+      <img src="./cover.jpg" />
       <img src="./main.jpg" />
     </div>
     <div class="info">
@@ -20,7 +21,7 @@
       </div>
       <div class="c-list">
         <div class="item">
-        <h3>参演日本社团</h3>
+        <h3>参演社团</h3>
         <ul>
           <li>凋叶棕</li>
           <li>NJK Record</li>
@@ -31,7 +32,7 @@
         </ul>
         </div>
         <div class="item">
-        <h3>参演国内社团</h3>
+        <h3>&nbsp;</h3>
         <ul>
           <li>TsuBaKi</li>
           <li>Echollapsar</li>
@@ -46,6 +47,11 @@
       <div class="actions">
         <a href="#" class="disabled">购买门票 - 暂未开放</a>
         <a href="https://thonly.name/2025" target="_blank">同期活动：魅知幻想博览会·星核碳酸</a>
+      </div>
+      <div class="actions">
+        <a href="https://weibo.com/houhouonly">微博 @上海THONLY-東方琢火蝶-</a>
+        <a href="https://qm.qq.com/q/sgodZkgqTC">上海thonly游客群：386286978</a>
+        <a href="https://qm.qq.com/q/lZHcpbBNfM">上海thonly游客2群：799044204</a>
       </div>
       <div class="copyright">
         <p> - 上海THONLY - </p>
@@ -109,7 +115,11 @@
       flex-wrap: wrap;
       text-align: center;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
+    }
+
+    .main .actions{
+      max-width: 800px;
     }
 
     .main .actions a {
@@ -119,10 +129,15 @@
       background-color: #F3BEC4;
       padding: 10px 15px;
       margin: 10px;
+      transition: .3s all;
     }
 
     .main .actions a.disabled {
       opacity: .6;
+    }
+
+    .main .actions a:hover{
+      transform: translateY(-5px);
     }
 
     .copyright {
