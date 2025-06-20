@@ -9,10 +9,13 @@
 
 <body>
   <div class="main">
+          <a href="https://app.nyanket.cn/event/shtholy2025" target="_blank">
     <div class="cover">
+
       <img src="./cover.jpg" />
       <img src="./main.jpg" />
     </div>
+    </a>
     <div class="info">
       <div class="header">
         <h2>第十三届上海thonly <br />-东方琢火蝶-</h2>
@@ -45,7 +48,7 @@
         </div>
       </div>
       <div class="actions">
-        <a href="#" class="disabled">购买门票 - 暂未开放</a>
+        <a href="https://app.nyanket.cn/event/shtholy2025" target="_blank">购买门票</a>
         <a href="https://thonly.name/2025" target="_blank">同期活动：魅知幻想博览会·星核碳酸</a>
       </div>
       <div class="actions">
@@ -94,7 +97,27 @@
       width: 100%;
       height: auto;
       max-width: 1300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
+    .main .cover img{
+      width: 50%;
+      height: auto;
+    }
+
+    @media (max-width: 800px) {
+
+      .main .cover{
+        display: block;
+      }
+      .main .cover img{
+        width: 100%;
+      }
+    }
+
+    
 
     .main img {
       width: 100%;
